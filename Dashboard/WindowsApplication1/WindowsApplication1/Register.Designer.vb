@@ -129,7 +129,7 @@ Partial Class Register
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.log_in_logo
+        Me.PictureBox1.Image = Global.StudentDashboard.My.Resources.Resources.log_in_logo
         Me.PictureBox1.Location = New System.Drawing.Point(422, 70)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(183, 193)

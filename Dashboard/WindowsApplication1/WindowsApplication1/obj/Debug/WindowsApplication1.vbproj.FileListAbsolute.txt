@@ -42,3 +42,7 @@ C:\Users\gharr\Source\Repos\Student-Dashboard---INSE\Dashboard\WindowsApplicatio
 C:\Users\gharr\Source\Repos\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
 C:\Users\gharr\Source\Repos\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
 C:\Users\gharr\Source\Repos\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb

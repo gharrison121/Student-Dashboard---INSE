@@ -91,7 +91,7 @@ Partial Class Bus
         'Weekday
         '
         Me.Weekday.AutoScroll = True
-        Me.Weekday.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.BusWeekday
+        Me.Weekday.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.BusWeekday
         Me.Weekday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Weekday.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
         Me.Weekday.Location = New System.Drawing.Point(22, 41)
@@ -101,7 +101,7 @@ Partial Class Bus
         '
         'OffTerm
         '
-        Me.OffTerm.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.outoftermbus
+        Me.OffTerm.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.outoftermbus
         Me.OffTerm.Location = New System.Drawing.Point(22, 41)
         Me.OffTerm.Name = "OffTerm"
         Me.OffTerm.Size = New System.Drawing.Size(1005, 635)
@@ -109,7 +109,7 @@ Partial Class Bus
         '
         'Weekend
         '
-        Me.Weekend.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.BusWeekend
+        Me.Weekend.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.BusWeekend
         Me.Weekend.Location = New System.Drawing.Point(22, 41)
         Me.Weekend.Name = "Weekend"
         Me.Weekend.Size = New System.Drawing.Size(894, 356)
@@ -117,7 +117,7 @@ Partial Class Bus
         '
         'Langstone
         '
-        Me.Langstone.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.langstonecampus
+        Me.Langstone.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.langstonecampus
         Me.Langstone.Location = New System.Drawing.Point(22, 41)
         Me.Langstone.Name = "Langstone"
         Me.Langstone.Size = New System.Drawing.Size(1463, 637)
