@@ -17,23 +17,40 @@
     End Sub
 
     Private Sub LogInButton_Click(sender As Object, e As EventArgs) Handles LogInButton.Click
-        If UserNameInput.Text = "" Then
+        LogIn(UserNameInput, PasswordInput)
+    End Sub
+
+    Public Sub LogIn(usernameInp As TextBox, passwordInp As TextBox)
+        ' lets grab our user's credentials
+        Dim username As String = usernameInp.Text
+        Dim password As String = passwordInp.Text
+        ' first we'll make sure we have a valid input, and if not ask 
+        ' the user to correct it
+        If passwordInp.TextLength <= 0 Then
             MessageBox.Show("Please enter your Student Id to login", "Portsmouth University", MessageBoxButtons.OK, MessageBoxIcon.Error)
             UserNameInput.Focus()
-        ElseIf PasswordInput.Text = "" Then
+            Return
+        ElseIf passwordInp.TextLength <= 0 Then
             MessageBox.Show("Please enter your Password to login", "Portsmouth University", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            PasswordInput.Focus() 
-        ElseIf UserNameInput.Text = "up787321" And PasswordInput.Text = "hey" Then
+            PasswordInput.Focus()
+            Return
+        End If
+        ' now that we know there's appropriate data, lets verify it
+        If VerifyCredentials(username, password) Then
             Me.Hide()
             Main.Show()
-            Main.Username.Text = UserNameInput.Text
+            Main.Username.Text = username
         Else
             LogInError.Visible = True
-            UserNameInput.Text = ""
-            PasswordInput.Text = ""
-            UserNameInput.Focus()
+            usernameInp.Text = ""
+            passwordInp.Text = ""
+            usernameInp.Focus()
         End If
     End Sub
+
+    Public Function VerifyCredentials(username As String, password As String) As Boolean
+        Return username.Equals("up787321") And password.Equals("hey")
+    End Function
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
         Me.Hide()

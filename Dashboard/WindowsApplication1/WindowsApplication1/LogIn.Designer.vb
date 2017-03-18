@@ -129,12 +129,12 @@ Partial Class LogIn
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents UserNameInput As System.Windows.Forms.TextBox
-    Friend WithEvents PasswordInput As System.Windows.Forms.TextBox
+    Public WithEvents PasswordInput As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents LogInButton As System.Windows.Forms.Button
     Friend WithEvents RegisterButton As System.Windows.Forms.Button
     Friend WithEvents LogInError As System.Windows.Forms.Label
+    Public WithEvents UserNameInput As System.Windows.Forms.TextBox
 End Class
