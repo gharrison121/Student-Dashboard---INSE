@@ -34,7 +34,6 @@ Partial Class Register
         Me.ConfirmPasswordInput = New System.Windows.Forms.TextBox()
         Me.PasswordError = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -136,21 +135,11 @@ Partial Class Register
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(473, 493)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 19
-        Me.Button1.Text = "Log In"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1105, 601)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PasswordError)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ConfirmPasswordInput)
@@ -181,5 +170,4 @@ Partial Class Register
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ConfirmPasswordInput As System.Windows.Forms.TextBox
     Friend WithEvents PasswordError As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
