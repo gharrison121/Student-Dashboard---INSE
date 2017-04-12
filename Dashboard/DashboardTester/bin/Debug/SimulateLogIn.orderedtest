@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="orderedtest2" storage="n:\lesson folders\year 2\inse\student-dashboard---inse-master\student-dashboard---inse-master\dashboard\windowsapplication1\dashboardtester\orderedtest2.orderedtest" id="fa32316b-9f8e-4024-a797-54090b0c9424" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="c06b99b8-0263-b8fe-69d0-098494f258aa" name="TestLogIn" storage="bin\debug\dashboardtester.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>
