@@ -31,6 +31,10 @@ Partial Class Timetable
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.UniPorts = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Inse = New System.Windows.Forms.RichTextBox()
+        Me.Web = New System.Windows.Forms.RichTextBox()
+        Me.MathFun = New System.Windows.Forms.RichTextBox()
+        Me.Gude = New System.Windows.Forms.RichTextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -47,14 +51,10 @@ Partial Class Timetable
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.newLesson = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Gude = New System.Windows.Forms.RichTextBox()
-        Me.MathFun = New System.Windows.Forms.RichTextBox()
-        Me.Web = New System.Windows.Forms.RichTextBox()
-        Me.Inse = New System.Windows.Forms.RichTextBox()
         Footer = New System.Windows.Forms.GroupBox()
         Footer.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -162,6 +162,42 @@ Partial Class Timetable
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Timetable"
+        '
+        'Inse
+        '
+        Me.Inse.Location = New System.Drawing.Point(805, 357)
+        Me.Inse.Name = "Inse"
+        Me.Inse.Size = New System.Drawing.Size(142, 33)
+        Me.Inse.TabIndex = 19
+        Me.Inse.Text = "Inse" & Global.Microsoft.VisualBasic.ChrW(10) & "LG 2.06"
+        Me.Inse.Visible = False
+        '
+        'Web
+        '
+        Me.Web.Location = New System.Drawing.Point(637, 271)
+        Me.Web.Name = "Web"
+        Me.Web.Size = New System.Drawing.Size(142, 33)
+        Me.Web.TabIndex = 18
+        Me.Web.Text = "Web Scripting" & Global.Microsoft.VisualBasic.ChrW(10) & "PO 1.74"
+        Me.Web.Visible = False
+        '
+        'MathFun
+        '
+        Me.MathFun.Location = New System.Drawing.Point(260, 99)
+        Me.MathFun.Name = "MathFun"
+        Me.MathFun.Size = New System.Drawing.Size(142, 33)
+        Me.MathFun.TabIndex = 17
+        Me.MathFun.Text = "MathFun" & Global.Microsoft.VisualBasic.ChrW(10) & "BK 1.01"
+        Me.MathFun.Visible = False
+        '
+        'Gude
+        '
+        Me.Gude.Location = New System.Drawing.Point(96, 56)
+        Me.Gude.Name = "Gude"
+        Me.Gude.Size = New System.Drawing.Size(142, 36)
+        Me.Gude.TabIndex = 16
+        Me.Gude.Text = "Gude" & Global.Microsoft.VisualBasic.ChrW(10) & "BK 0.19"
+        Me.Gude.Visible = False
         '
         'Label16
         '
@@ -307,14 +343,14 @@ Partial Class Timetable
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Monday"
         '
-        'Button1
+        'newLesson
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 5)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "New Lesson"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.newLesson.Location = New System.Drawing.Point(13, 5)
+        Me.newLesson.Name = "newLesson"
+        Me.newLesson.Size = New System.Drawing.Size(75, 23)
+        Me.newLesson.TabIndex = 13
+        Me.newLesson.Text = "New Lesson"
+        Me.newLesson.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -330,52 +366,16 @@ Partial Class Timetable
         Me.DateLabel.AutoSize = True
         Me.DateLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DateLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.DateLabel.Font = New System.Drawing.Font("Poor Richard", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateLabel.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateLabel.Location = New System.Drawing.Point(914, 2)
         Me.DateLabel.Name = "DateLabel"
-        Me.DateLabel.Size = New System.Drawing.Size(76, 26)
+        Me.DateLabel.Size = New System.Drawing.Size(59, 27)
         Me.DateLabel.TabIndex = 15
-        Me.DateLabel.Text = "Label3"
+        Me.DateLabel.Text = "Date"
         '
         'Timer1
         '
         Me.Timer1.Enabled = True
-        '
-        'Gude
-        '
-        Me.Gude.Location = New System.Drawing.Point(96, 56)
-        Me.Gude.Name = "Gude"
-        Me.Gude.Size = New System.Drawing.Size(142, 36)
-        Me.Gude.TabIndex = 16
-        Me.Gude.Text = "Gude" & Global.Microsoft.VisualBasic.ChrW(10) & "BK 0.19"
-        Me.Gude.Visible = False
-        '
-        'MathFun
-        '
-        Me.MathFun.Location = New System.Drawing.Point(260, 99)
-        Me.MathFun.Name = "MathFun"
-        Me.MathFun.Size = New System.Drawing.Size(142, 33)
-        Me.MathFun.TabIndex = 17
-        Me.MathFun.Text = "MathFun" & Global.Microsoft.VisualBasic.ChrW(10) & "BK 1.01"
-        Me.MathFun.Visible = False
-        '
-        'Web
-        '
-        Me.Web.Location = New System.Drawing.Point(637, 271)
-        Me.Web.Name = "Web"
-        Me.Web.Size = New System.Drawing.Size(142, 33)
-        Me.Web.TabIndex = 18
-        Me.Web.Text = "Web Scripting" & Global.Microsoft.VisualBasic.ChrW(10) & "PO 1.74"
-        Me.Web.Visible = False
-        '
-        'Inse
-        '
-        Me.Inse.Location = New System.Drawing.Point(805, 357)
-        Me.Inse.Name = "Inse"
-        Me.Inse.Size = New System.Drawing.Size(142, 33)
-        Me.Inse.TabIndex = 19
-        Me.Inse.Text = "Inse" & Global.Microsoft.VisualBasic.ChrW(10) & "LG 2.06"
-        Me.Inse.Visible = False
         '
         'Timetable
         '
@@ -384,7 +384,7 @@ Partial Class Timetable
         Me.ClientSize = New System.Drawing.Size(1148, 718)
         Me.Controls.Add(Me.DateLabel)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.newLesson)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Footer)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -409,7 +409,7 @@ Partial Class Timetable
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents newLesson As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label

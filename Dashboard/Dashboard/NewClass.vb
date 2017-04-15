@@ -17,23 +17,13 @@
         Day.SelectedIndex = -1
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Cancel.Click
+    Private Sub Cancel_Click(sender As Object, e As EventArgs) Handles Cancel.Click
         Me.Hide()
         Subject.Text = ""
         Room.Text = ""
         Time.SelectedIndex = -1
         Day.SelectedIndex = -1
     End Sub
-
-    Private Sub DateLabel_Click(sender As Object, e As EventArgs) Handles DateLabel.Click
-
-    End Sub
-
-    Private Sub Time_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Time.SelectedIndexChanged
-
-    End Sub
-
-    
 
     Private Sub Submit2_Click(sender As Object, e As EventArgs) Handles Submit2.Click
         Me.Hide()

@@ -7,6 +7,7 @@ Public Class LogIn
     End Sub
 
     Private Sub LogInButton_Click(sender As Object, e As EventArgs) Handles LogInButton.Click
+        ' When 'Log In' is clicked -  call Sub LogIn and parse in two input values for username and password to validate input
         LogIn(UserNameInput, PasswordInput)
     End Sub
 
@@ -25,12 +26,17 @@ Public Class LogIn
             PasswordInput.Focus()
             Return
         End If
+
         ' now that we know there's appropriate data, lets verify it
+        ' Call function VerifyCredentials with two parameters - username and password
+        ' Returns value of True or False
         If VerifyCredentials(username, password) Then
+            ' True - Verification success
             Main.Show()
             Me.Hide()
 
         Else
+            ' False - Verification failed - user not found
             LogInError.Visible = True
             usernameInp.Text = ""
             passwordInp.Text = ""
@@ -38,6 +44,10 @@ Public Class LogIn
         End If
     End Sub
 
+    ' Function for verifying credentials
+    ' @param username, string - the entered username 
+    ' @param password, string - the entered password
+    ' Returns true or false 
     Public Function VerifyCredentials(username As String, password As String) As Boolean
         ' Here is where login details are verified against the MS Access Database
         ' Currently DB is local but could be hosted on a server
@@ -54,8 +64,6 @@ Public Class LogIn
             Return False
         End If
 
-        ' Old test validation
-        ' Return username.Equals("up787321") And password.Equals("hey")
     End Function
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
