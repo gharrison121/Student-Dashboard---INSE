@@ -24,7 +24,7 @@ Public Class Register
             Dim username As String = UserNameInput.Text
             Dim password As String = PasswordInput.Text
 
-            Dim dbConString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= " & Environment.CurrentDirectory & "\Accounts.mdb"
+            Dim dbConString As String = My.Settings.AccountsConnectionString
             Dim dbCon As New OleDbConnection(dbConString)
 
             ' Open connection
@@ -38,9 +38,9 @@ Public Class Register
             ' Close Connection - Registration complete
 
             ' Open Log In Page
-            Dim newLogIn As LogIn
-            newLogIn = New LogIn()
-            newLogIn.Show()
+            LogIn.UserNameInput.Text = ""
+            LogIn.PasswordInput.Text = ""
+            LogIn.Show()
             ' Close Current Page
             Me.Hide()
 
@@ -51,9 +51,9 @@ Public Class Register
 
     Private Sub CancelBtn_Click(sender As Object, e As EventArgs) Handles CancelBtn.Click
         Me.Hide()
-        ' Open as new instance to clear any old values
-        Dim newLogIn As LogIn
-        newLogIn = New LogIn()
-        newLogIn.Show()
+        ' Clear any old values and open LogIn
+        LogIn.UserNameInput.Text = ""
+        LogIn.PasswordInput.Text = ""
+        LogIn.Show()
     End Sub
 End Class

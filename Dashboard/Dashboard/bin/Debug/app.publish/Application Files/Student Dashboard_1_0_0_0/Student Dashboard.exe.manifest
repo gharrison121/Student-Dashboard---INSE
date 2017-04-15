@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Student Dashboard.exe" version="1.0.0.0" publicKeyToken="c59688f9c8d6939d" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Student Dashboard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Student Dashboard.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Student Dashboard.exe" size="3084288">
+      <assemblyIdentity name="Student Dashboard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>66y3T6Vk1Lj3Sr0/kqZWnpDuw7/rLIFFXY0BlmCkvzU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Accounts.mdb" size="274432" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i7YzIgErftamdpT+bQiEalFUfxEoutqMzEbahC/LYUU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Student Dashboard.exe.config" size="547">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pwhy0CJbqEBO08U/AzuUU0SBp3C+yDX16pgyD5WeQOI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-HEE1A5V\gharr" issuerKeyHash="51b5f5cbad125ec4319935d23f354ac18e0f0168" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>D5mK5AlRsngYDQq+ihnYbz6mEt6jR/j4i2bc0C+sM+k=</DigestValue></Reference></SignedInfo><SignatureValue>HnaasLObtIJC0xgMwUiCoJaSUKN5ug+FQnuZ5p6uHasN5rKeoMLewAVK1ZGeUIQ7t0ZaGtV+OTQ9OTbUVwLlC+aNdhMDVvg7O+i/FyM3brgURA4UdL4MCxpudzYBLIpQ/Sdv/qyqQE3FrOHPcxlTLAXjj2EK9xZVT8yDk4249kc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ovyH6aKOzgtu+DGiuXeEspr+ru8OsGqz1w/1VqvfRoI6jlKnT2c1enh7t3lW+aUB+V+mKeY1vvF5cPopp1/d5OqZIW65RgP8KJDp53tTjGPHaSDTnHompEMfHQCNpJH7rhwW/Y/AEPowjp+veAGUFSeeIgrXyq9iZou0ma2h0qc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e933ac2fd0dc668bf8f847a3de12a63e6fd8198abe0a0d1878b25109e48a990f" Description="" Url=""><as:assemblyIdentity name="Student Dashboard.exe" version="1.0.0.0" publicKeyToken="c59688f9c8d6939d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-HEE1A5V\gharr</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qjdRa/B1IMeTBPVoMJugohWp2MA7GIfTG9Gs7yRN3fg=</DigestValue></Reference></SignedInfo><SignatureValue>Fq/vH8EV3cDvyOHpZfMYgaiCFDcmmG+vJpQ5eM+SGh8aQ4q4PFR88GX34IrapvdvzRXIlq9W9LymqsBU2PL1QCa9oZc9n0QmatkGGgq/JdDEwnWCVvypHR+PieR6cj8V+6Ii8PUCwY1UHR7P3+DUW/ObF//p+UGATkNcaLp042M=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ovyH6aKOzgtu+DGiuXeEspr+ru8OsGqz1w/1VqvfRoI6jlKnT2c1enh7t3lW+aUB+V+mKeY1vvF5cPopp1/d5OqZIW65RgP8KJDp53tTjGPHaSDTnHompEMfHQCNpJH7rhwW/Y/AEPowjp+veAGUFSeeIgrXyq9iZou0ma2h0qc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQYtVbHC90yo5C36efT50BVzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEgARQBFADEAQQA1AFYAXABnAGgAYQByAHIwHhcNMTcwNDE1MTc0NzM4WhcNMTgwNDE1MjM0NzM4WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEgARQBFADEAQQA1AFYAXABnAGgAYQByAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKL8h+mijs4Lbvgxorl3hLKa/q7vDrBqs9cP9Var30aCOo5Sp09nNXp4e7d5VvmlAflfpinmNb7xeXD6Kadf3eTqmSFuuUYD/CiQ6ed7U4xjx2kg05x6JqRDHx0AjaSR+64cFv2PwBD6MI6fr3gBlBUnniIK18qvYmaLtJmtodKnAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAfMs+GlFK2i6mjywiMa9dvcgrpuCv9Cc05vPrjEvoRp6JMhZqyxyWHTg46QJ5gSsRe5BQfSMgW8UXBbvUbHcyGeFVdjuHH0r2bkU3teIPuPv34SvQWN1uJFwD6blFoI8UXeA9XDHemk1Xp0uYDdsS1MTeK2dAcSelH7pqc35Ljlw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

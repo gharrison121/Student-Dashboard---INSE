@@ -51,7 +51,8 @@ Public Class LogIn
     Public Function VerifyCredentials(username As String, password As String) As Boolean
         ' Here is where login details are verified against the MS Access Database
         ' Currently DB is local but could be hosted on a server
-        Dim dbConString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= " & Environment.CurrentDirectory & "\Accounts.mdb"
+        Dim dbConString As String = My.Settings.AccountsConnectionString
+
         Dim dbCon As New OleDbConnection(dbConString)
         Dim dbCmd As OleDbCommand = New OleDbCommand("SELECT * FROM users WHERE username = '" & username & "' AND password = '" & password & "' ", dbCon)
         dbCon.Open()
