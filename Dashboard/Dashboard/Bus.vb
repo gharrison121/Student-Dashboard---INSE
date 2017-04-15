@@ -24,7 +24,7 @@
         Weekend.Visible = True
     End Sub
 
-    Private Sub Lansgstone_Click(sender As Object, e As EventArgs) Handles Lansgstone.Click
+    Private Sub Langstone_Click(sender As Object, e As EventArgs) Handles Lansgstone.Click
         Weekday.Visible = False
         Weekend.Visible = False
         OffTerm.Visible = False

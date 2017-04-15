@@ -46,12 +46,12 @@ Partial Class NewClass
         '
         Me.DateLabel.AutoSize = True
         Me.DateLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DateLabel.Font = New System.Drawing.Font("Poor Richard", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateLabel.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateLabel.Location = New System.Drawing.Point(719, 9)
         Me.DateLabel.Name = "DateLabel"
-        Me.DateLabel.Size = New System.Drawing.Size(74, 24)
+        Me.DateLabel.Size = New System.Drawing.Size(57, 25)
         Me.DateLabel.TabIndex = 4
-        Me.DateLabel.Text = "Label3"
+        Me.DateLabel.Text = "Date"
         '
         'Timer1
         '

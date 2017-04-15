@@ -41,12 +41,12 @@ Partial Class Bus
         '
         Me.DateLabel.AutoSize = True
         Me.DateLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DateLabel.Font = New System.Drawing.Font("Poor Richard", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateLabel.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateLabel.Location = New System.Drawing.Point(802, 9)
         Me.DateLabel.Name = "DateLabel"
-        Me.DateLabel.Size = New System.Drawing.Size(74, 24)
+        Me.DateLabel.Size = New System.Drawing.Size(57, 25)
         Me.DateLabel.TabIndex = 4
-        Me.DateLabel.Text = "Label3"
+        Me.DateLabel.Text = "Date"
         '
         'WeekdayButton
         '
@@ -54,7 +54,7 @@ Partial Class Bus
         Me.WeekdayButton.Name = "WeekdayButton"
         Me.WeekdayButton.Size = New System.Drawing.Size(75, 23)
         Me.WeekdayButton.TabIndex = 9
-        Me.WeekdayButton.Text = "WeekDay"
+        Me.WeekdayButton.Text = "Week Day"
         Me.WeekdayButton.UseVisualStyleBackColor = True
         '
         'WeekendButton
@@ -81,7 +81,7 @@ Partial Class Bus
         Me.OutOfTerm.Name = "OutOfTerm"
         Me.OutOfTerm.Size = New System.Drawing.Size(76, 23)
         Me.OutOfTerm.TabIndex = 12
-        Me.OutOfTerm.Text = "Out Off Term"
+        Me.OutOfTerm.Text = "Out Of Term"
         Me.OutOfTerm.UseVisualStyleBackColor = True
         '
         'Timer1

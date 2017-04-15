@@ -34,12 +34,13 @@ Partial Class Register
         Me.ConfirmPasswordInput = New System.Windows.Forms.TextBox()
         Me.PasswordError = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.CancelBtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RegisterButton
         '
-        Me.RegisterButton.Location = New System.Drawing.Point(473, 463)
+        Me.RegisterButton.Location = New System.Drawing.Point(559, 463)
         Me.RegisterButton.Name = "RegisterButton"
         Me.RegisterButton.Size = New System.Drawing.Size(75, 23)
         Me.RegisterButton.TabIndex = 13
@@ -135,11 +136,21 @@ Partial Class Register
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
+        'CancelBtn
+        '
+        Me.CancelBtn.Location = New System.Drawing.Point(394, 463)
+        Me.CancelBtn.Name = "CancelBtn"
+        Me.CancelBtn.Size = New System.Drawing.Size(75, 23)
+        Me.CancelBtn.TabIndex = 19
+        Me.CancelBtn.Text = "Cancel"
+        Me.CancelBtn.UseVisualStyleBackColor = True
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1105, 601)
+        Me.Controls.Add(Me.CancelBtn)
         Me.Controls.Add(Me.PasswordError)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ConfirmPasswordInput)
@@ -170,4 +181,5 @@ Partial Class Register
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ConfirmPasswordInput As System.Windows.Forms.TextBox
     Friend WithEvents PasswordError As System.Windows.Forms.Label
+    Friend WithEvents CancelBtn As System.Windows.Forms.Button
 End Class

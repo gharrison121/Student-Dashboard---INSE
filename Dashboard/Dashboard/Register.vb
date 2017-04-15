@@ -3,7 +3,7 @@ Public Class Register
 
     Private Sub Register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.BackColor = Color.DarkViolet
-        PasswordError.Hide()
+        PasswordError.Visible = False
     End Sub
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
@@ -35,7 +35,7 @@ Public Class Register
             dbCmd.Parameters.AddWithValue("@password", password)
             ' Execute Query
             dbCmd.ExecuteNonQuery()
-            ' Close Connection
+            ' Close Connection - Registration complete
 
             ' Open Log In Page
             Dim newLogIn As LogIn
@@ -45,12 +45,13 @@ Public Class Register
             Me.Hide()
 
         Else
-            PasswordError.Show()
+            PasswordError.Visible = True
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
+    Private Sub CancelBtn_Click(sender As Object, e As EventArgs) Handles CancelBtn.Click
         Me.Hide()
+        ' Open as new instance to clear any old values
         Dim newLogIn As LogIn
         newLogIn = New LogIn()
         newLogIn.Show()

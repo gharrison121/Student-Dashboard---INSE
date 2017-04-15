@@ -5,25 +5,9 @@
         DateLabel.BackColor = Color.DarkViolet
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Username.Click
-
-    End Sub
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-
+        ' Get Date
         DateLabel.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub GroupBox1_Enter_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub GroupBox1_Enter_2(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub UploadButton_Click(sender As Object, e As EventArgs) Handles UploadButtonOne.Click
@@ -52,7 +36,7 @@
         ReminderComment.Text = ""
     End Sub
 
-    Private Sub DateLabel_Click(sender As Object, e As EventArgs) Handles DateLabel.Click
-
+    Private Sub Cancel_Click(sender As Object, e As EventArgs) Handles Cancel.Click
+        Me.Hide()
     End Sub
 End Class

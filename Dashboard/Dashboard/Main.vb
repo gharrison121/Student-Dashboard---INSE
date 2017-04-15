@@ -1,7 +1,12 @@
 ﻿Public Class Main
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Style
         Me.BackColor = Color.DarkViolet
+        ' Set username to one logged in with, saves connection to DB
+        Username.Text = LogIn.UserNameInput.Text
+
+        ' Get Date
         DateLabel.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
         ReminderButton.Text = "Set New Reminder"
         DateLabel.BackColor = Color.DarkViolet
@@ -17,28 +22,18 @@
         LinkLabel5.Links.Add(0, 5, "www.upsu.net")
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Username.Click
-
-    End Sub
-
-   
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
         DateLabel.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
 
     End Sub
 
-    Private Sub DateLabel_Click(sender As Object, e As EventArgs) Handles DateLabel.Click
-
-    End Sub
-
-    Private Sub RemindeButton_Click(sender As Object, e As EventArgs) Handles ReminderButton.Click
-        Reminder.Username.Text = Username.Text
+    Private Sub ReminderButton_Click(sender As Object, e As EventArgs) Handles ReminderButton.Click
         Reminder.Show()
     End Sub
 
    
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub ViewBusBtn_Click(sender As Object, e As EventArgs) Handles ViewBusBtn.Click
         Me.Hide()
         Bus.Show()
     End Sub

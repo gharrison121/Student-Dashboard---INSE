@@ -27,11 +27,7 @@ Public Class LogIn
         End If
         ' now that we know there's appropriate data, lets verify it
         If VerifyCredentials(username, password) Then
-
-            Dim newMain As Main
-            newMain = New Main()
-            newMain.Username.Text = username
-            newMain.Show()
+            Main.Show()
             Me.Hide()
 
         Else
@@ -44,6 +40,7 @@ Public Class LogIn
 
     Public Function VerifyCredentials(username As String, password As String) As Boolean
         ' Here is where login details are verified against the MS Access Database
+        ' Currently DB is local but could be hosted on a server
         Dim dbConString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= " & Environment.CurrentDirectory & "\Accounts.mdb"
         Dim dbCon As New OleDbConnection(dbConString)
         Dim dbCmd As OleDbCommand = New OleDbCommand("SELECT * FROM users WHERE username = '" & username & "' AND password = '" & password & "' ", dbCon)
@@ -63,7 +60,11 @@ Public Class LogIn
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
         Me.Hide()
-        Register.Show()
+        ' Open Log In Page
+        Dim newRegister As Register
+        newRegister = New Register()
+        newRegister.Show()
+        newRegister.Show()
     End Sub
 
 End Class
