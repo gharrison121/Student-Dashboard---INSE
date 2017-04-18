@@ -64,6 +64,102 @@ Namespace My
                 Return CType(Me("AccountsConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property RemOneVis() As Boolean
+            Get
+                Return CType(Me("RemOneVis"),Boolean)
+            End Get
+            Set
+                Me("RemOneVis") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property RemTwoVis() As Boolean
+            Get
+                Return CType(Me("RemTwoVis"),Boolean)
+            End Get
+            Set
+                Me("RemTwoVis") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property RemOneTitle() As String
+            Get
+                Return CType(Me("RemOneTitle"),String)
+            End Get
+            Set
+                Me("RemOneTitle") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property RemOneDate() As String
+            Get
+                Return CType(Me("RemOneDate"),String)
+            End Get
+            Set
+                Me("RemOneDate") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property RemOneCmt() As String
+            Get
+                Return CType(Me("RemOneCmt"),String)
+            End Get
+            Set
+                Me("RemOneCmt") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property RemTwoTitle() As String
+            Get
+                Return CType(Me("RemTwoTitle"),String)
+            End Get
+            Set
+                Me("RemTwoTitle") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property RemTwoDate() As String
+            Get
+                Return CType(Me("RemTwoDate"),String)
+            End Get
+            Set
+                Me("RemTwoDate") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property RemTwoCmt() As String
+            Get
+                Return CType(Me("RemTwoCmt"),String)
+            End Get
+            Set
+                Me("RemTwoCmt") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

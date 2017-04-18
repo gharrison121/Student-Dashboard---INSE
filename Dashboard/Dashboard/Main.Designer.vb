@@ -37,11 +37,11 @@ Partial Class Main
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.ReminderButton = New System.Windows.Forms.Button()
         Me.ReminderOne = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.CloseR1 = New System.Windows.Forms.Button()
         Me.ReminderOneComment = New System.Windows.Forms.Label()
         Me.ReminderOneDate = New System.Windows.Forms.Label()
         Me.ReminderTwo = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.CloseR2 = New System.Windows.Forms.Button()
         Me.ReminderTwoComment = New System.Windows.Forms.Label()
         Me.ReminderTwoDate = New System.Windows.Forms.Label()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
@@ -178,7 +178,7 @@ Partial Class Main
         '
         'ReminderOne
         '
-        Me.ReminderOne.Controls.Add(Me.Button2)
+        Me.ReminderOne.Controls.Add(Me.CloseR1)
         Me.ReminderOne.Controls.Add(Me.ReminderOneComment)
         Me.ReminderOne.Controls.Add(Me.ReminderOneDate)
         Me.ReminderOne.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -190,17 +190,17 @@ Partial Class Main
         Me.ReminderOne.Text = "Reminder Block"
         Me.ReminderOne.Visible = False
         '
-        'Button2
+        'CloseR1
         '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Wingdings 2", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
-        Me.Button2.Location = New System.Drawing.Point(309, 15)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(21, 24)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "S"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.CloseR1.FlatAppearance.BorderSize = 0
+        Me.CloseR1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CloseR1.Font = New System.Drawing.Font("Wingdings 2", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
+        Me.CloseR1.Location = New System.Drawing.Point(309, 15)
+        Me.CloseR1.Name = "CloseR1"
+        Me.CloseR1.Size = New System.Drawing.Size(21, 24)
+        Me.CloseR1.TabIndex = 3
+        Me.CloseR1.Text = "S"
+        Me.CloseR1.UseVisualStyleBackColor = True
         '
         'ReminderOneComment
         '
@@ -224,7 +224,7 @@ Partial Class Main
         '
         'ReminderTwo
         '
-        Me.ReminderTwo.Controls.Add(Me.Button3)
+        Me.ReminderTwo.Controls.Add(Me.CloseR2)
         Me.ReminderTwo.Controls.Add(Me.ReminderTwoComment)
         Me.ReminderTwo.Controls.Add(Me.ReminderTwoDate)
         Me.ReminderTwo.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -236,17 +236,17 @@ Partial Class Main
         Me.ReminderTwo.Text = "Reminder Block"
         Me.ReminderTwo.Visible = False
         '
-        'Button3
+        'CloseR2
         '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Wingdings 2", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
-        Me.Button3.Location = New System.Drawing.Point(309, 15)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(21, 24)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "S"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.CloseR2.FlatAppearance.BorderSize = 0
+        Me.CloseR2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CloseR2.Font = New System.Drawing.Font("Wingdings 2", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
+        Me.CloseR2.Location = New System.Drawing.Point(309, 15)
+        Me.CloseR2.Name = "CloseR2"
+        Me.CloseR2.Size = New System.Drawing.Size(21, 24)
+        Me.CloseR2.TabIndex = 4
+        Me.CloseR2.Text = "S"
+        Me.CloseR2.UseVisualStyleBackColor = True
         '
         'ReminderTwoComment
         '
@@ -341,6 +341,6 @@ Partial Class Main
     Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents CloseR1 As System.Windows.Forms.Button
+    Friend WithEvents CloseR2 As System.Windows.Forms.Button
 End Class

@@ -20,6 +20,22 @@
         LinkLabel4.Links.Add(0, 7, "www.port.ac.uk/library/home/")
         LinkLabel5.Text = "Union"
         LinkLabel5.Links.Add(0, 5, "www.upsu.net")
+
+        ' Reminder Visibility
+        ReminderOne.Visible = My.Settings.RemOneVis
+        ReminderTwo.Visible = My.Settings.RemTwoVis
+
+        ' Reminder Content
+        ReminderOne.Text = My.Settings.RemOneTitle
+        ReminderOneDate.Text = My.Settings.RemOneDate
+        ReminderOneComment.Text = My.Settings.RemOneCmt
+
+        ' Reminder Content
+        ReminderTwo.Text = My.Settings.RemTwoTitle
+        ReminderTwoDate.Text = My.Settings.RemTwoDate
+        ReminderTwoComment.Text = My.Settings.RemTwoCmt
+
+
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -70,11 +86,15 @@ LinkLabel5.LinkClicked
         System.Diagnostics.Process.Start(e.Link.LinkData.ToString())
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub CloseR1_Click(sender As Object, e As EventArgs) Handles CloseR1.Click
         ReminderOne.Visible = False
+        My.Settings.RemOneVis = False
+        My.Settings.Save()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub CloseR2_Click(sender As Object, e As EventArgs) Handles CloseR2.Click
         ReminderTwo.Visible = False
+        My.Settings.RemTwoVis = False
+        My.Settings.Save()
     End Sub
 End Class

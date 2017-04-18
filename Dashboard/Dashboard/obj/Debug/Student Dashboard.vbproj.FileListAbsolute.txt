@@ -52,3 +52,8 @@ C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashbo
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.application
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe.manifest
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.application
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Accounts.mdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.manifest
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.application
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe.manifest
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.application
