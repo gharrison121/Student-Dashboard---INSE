@@ -26,7 +26,6 @@ Partial Class NewClass
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewClass))
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Submit1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Cancel = New System.Windows.Forms.Button()
         Me.Subject = New System.Windows.Forms.TextBox()
@@ -37,9 +36,16 @@ Partial Class NewClass
         Me.Time = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Day = New System.Windows.Forms.ComboBox()
-        Me.Submit2 = New System.Windows.Forms.Button()
-        Me.Submit3 = New System.Windows.Forms.Button()
-        Me.Submit4 = New System.Windows.Forms.Button()
+        Me.Comments = New System.Windows.Forms.RichTextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Colour = New System.Windows.Forms.ComboBox()
+        Me.submit = New System.Windows.Forms.Button()
+        Me.SubjectError = New System.Windows.Forms.Label()
+        Me.RoomError = New System.Windows.Forms.Label()
+        Me.TimeError = New System.Windows.Forms.Label()
+        Me.DayError = New System.Windows.Forms.Label()
+        Me.ColourError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'DateLabel
@@ -56,15 +62,6 @@ Partial Class NewClass
         'Timer1
         '
         Me.Timer1.Enabled = True
-        '
-        'Submit1
-        '
-        Me.Submit1.Location = New System.Drawing.Point(756, 350)
-        Me.Submit1.Name = "Submit1"
-        Me.Submit1.Size = New System.Drawing.Size(75, 23)
-        Me.Submit1.TabIndex = 5
-        Me.Submit1.Text = "Submit"
-        Me.Submit1.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -153,44 +150,125 @@ Partial Class NewClass
         Me.Day.Size = New System.Drawing.Size(121, 21)
         Me.Day.TabIndex = 15
         '
-        'Submit2
+        'Comments
         '
-        Me.Submit2.Location = New System.Drawing.Point(756, 350)
-        Me.Submit2.Name = "Submit2"
-        Me.Submit2.Size = New System.Drawing.Size(75, 23)
-        Me.Submit2.TabIndex = 16
-        Me.Submit2.Text = "Submit"
-        Me.Submit2.UseVisualStyleBackColor = True
-        Me.Submit2.Visible = False
+        Me.Comments.Location = New System.Drawing.Point(389, 84)
+        Me.Comments.Name = "Comments"
+        Me.Comments.Size = New System.Drawing.Size(308, 66)
+        Me.Comments.TabIndex = 19
+        Me.Comments.Text = ""
         '
-        'Submit3
+        'Label6
         '
-        Me.Submit3.Location = New System.Drawing.Point(756, 350)
-        Me.Submit3.Name = "Submit3"
-        Me.Submit3.Size = New System.Drawing.Size(75, 23)
-        Me.Submit3.TabIndex = 17
-        Me.Submit3.Text = "Submit"
-        Me.Submit3.UseVisualStyleBackColor = True
-        Me.Submit3.Visible = False
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(386, 67)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(56, 13)
+        Me.Label6.TabIndex = 20
+        Me.Label6.Text = "Comments"
         '
-        'Submit4
+        'Label7
         '
-        Me.Submit4.Location = New System.Drawing.Point(756, 350)
-        Me.Submit4.Name = "Submit4"
-        Me.Submit4.Size = New System.Drawing.Size(75, 23)
-        Me.Submit4.TabIndex = 18
-        Me.Submit4.Text = "Submit"
-        Me.Submit4.UseVisualStyleBackColor = True
-        Me.Submit4.Visible = False
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(386, 187)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(37, 13)
+        Me.Label7.TabIndex = 21
+        Me.Label7.Text = "Colour"
+        '
+        'Colour
+        '
+        Me.Colour.FormattingEnabled = True
+        Me.Colour.Items.AddRange(New Object() {"Red", "Orange", "Yellow", "Green", "Blue", "White", "Turquoise", "Pink", "Black", "Brown", "Grey"})
+        Me.Colour.Location = New System.Drawing.Point(389, 203)
+        Me.Colour.Name = "Colour"
+        Me.Colour.Size = New System.Drawing.Size(121, 21)
+        Me.Colour.TabIndex = 22
+        '
+        'submit
+        '
+        Me.submit.Location = New System.Drawing.Point(757, 350)
+        Me.submit.Name = "submit"
+        Me.submit.Size = New System.Drawing.Size(75, 23)
+        Me.submit.TabIndex = 23
+        Me.submit.Text = "Submit"
+        Me.submit.UseVisualStyleBackColor = True
+        '
+        'SubjectError
+        '
+        Me.SubjectError.AutoSize = True
+        Me.SubjectError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.SubjectError.ForeColor = System.Drawing.Color.Red
+        Me.SubjectError.Location = New System.Drawing.Point(192, 84)
+        Me.SubjectError.Name = "SubjectError"
+        Me.SubjectError.Size = New System.Drawing.Size(112, 13)
+        Me.SubjectError.TabIndex = 24
+        Me.SubjectError.Text = "Please enter a subject"
+        Me.SubjectError.Visible = False
+        '
+        'RoomError
+        '
+        Me.RoomError.AutoSize = True
+        Me.RoomError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.RoomError.ForeColor = System.Drawing.Color.Red
+        Me.RoomError.Location = New System.Drawing.Point(192, 146)
+        Me.RoomError.Name = "RoomError"
+        Me.RoomError.Size = New System.Drawing.Size(126, 13)
+        Me.RoomError.TabIndex = 25
+        Me.RoomError.Text = "Please enter a valid room"
+        Me.RoomError.Visible = False
+        '
+        'TimeError
+        '
+        Me.TimeError.AutoSize = True
+        Me.TimeError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.TimeError.ForeColor = System.Drawing.Color.Red
+        Me.TimeError.Location = New System.Drawing.Point(211, 203)
+        Me.TimeError.Name = "TimeError"
+        Me.TimeError.Size = New System.Drawing.Size(97, 13)
+        Me.TimeError.TabIndex = 26
+        Me.TimeError.Text = "Please enter a time"
+        Me.TimeError.Visible = False
+        '
+        'DayError
+        '
+        Me.DayError.AutoSize = True
+        Me.DayError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.DayError.ForeColor = System.Drawing.Color.Red
+        Me.DayError.Location = New System.Drawing.Point(211, 263)
+        Me.DayError.Name = "DayError"
+        Me.DayError.Size = New System.Drawing.Size(95, 13)
+        Me.DayError.TabIndex = 27
+        Me.DayError.Text = "Please enter a day"
+        Me.DayError.Visible = False
+        '
+        'ColourError
+        '
+        Me.ColourError.AutoSize = True
+        Me.ColourError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.ColourError.ForeColor = System.Drawing.Color.Red
+        Me.ColourError.Location = New System.Drawing.Point(552, 206)
+        Me.ColourError.Name = "ColourError"
+        Me.ColourError.Size = New System.Drawing.Size(107, 13)
+        Me.ColourError.TabIndex = 28
+        Me.ColourError.Text = "Please enter a colour"
+        Me.ColourError.Visible = False
         '
         'NewClass
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(954, 397)
-        Me.Controls.Add(Me.Submit4)
-        Me.Controls.Add(Me.Submit3)
-        Me.Controls.Add(Me.Submit2)
+        Me.Controls.Add(Me.ColourError)
+        Me.Controls.Add(Me.DayError)
+        Me.Controls.Add(Me.TimeError)
+        Me.Controls.Add(Me.RoomError)
+        Me.Controls.Add(Me.SubjectError)
+        Me.Controls.Add(Me.submit)
+        Me.Controls.Add(Me.Colour)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Comments)
         Me.Controls.Add(Me.Day)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Time)
@@ -201,7 +279,6 @@ Partial Class NewClass
         Me.Controls.Add(Me.Subject)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Submit1)
         Me.Controls.Add(Me.DateLabel)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "NewClass"
@@ -212,7 +289,6 @@ Partial Class NewClass
     End Sub
     Friend WithEvents DateLabel As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents Submit1 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Cancel As System.Windows.Forms.Button
     Friend WithEvents Subject As System.Windows.Forms.TextBox
@@ -223,7 +299,14 @@ Partial Class NewClass
     Friend WithEvents Time As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Day As System.Windows.Forms.ComboBox
-    Public WithEvents Submit2 As System.Windows.Forms.Button
-    Friend WithEvents Submit3 As System.Windows.Forms.Button
-    Friend WithEvents Submit4 As System.Windows.Forms.Button
+    Friend WithEvents Comments As System.Windows.Forms.RichTextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Colour As System.Windows.Forms.ComboBox
+    Friend WithEvents submit As System.Windows.Forms.Button
+    Friend WithEvents SubjectError As System.Windows.Forms.Label
+    Friend WithEvents RoomError As System.Windows.Forms.Label
+    Friend WithEvents TimeError As System.Windows.Forms.Label
+    Friend WithEvents DayError As System.Windows.Forms.Label
+    Friend WithEvents ColourError As System.Windows.Forms.Label
 End Class
