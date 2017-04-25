@@ -31,10 +31,6 @@ Partial Class Timetable
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.UniPorts = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Inse = New System.Windows.Forms.RichTextBox()
-        Me.Web = New System.Windows.Forms.RichTextBox()
-        Me.MathFun = New System.Windows.Forms.RichTextBox()
-        Me.Gude = New System.Windows.Forms.RichTextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -51,6 +47,18 @@ Partial Class Timetable
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape11 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape10 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape9 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape8 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape7 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape6 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape5 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.newLesson = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.DateLabel = New System.Windows.Forms.Label()
@@ -68,9 +76,9 @@ Partial Class Timetable
         Footer.Controls.Add(Me.LinkLabel3)
         Footer.Controls.Add(Me.LinkLabel2)
         Footer.Controls.Add(Me.UniPorts)
-        Footer.Location = New System.Drawing.Point(13, 585)
+        Footer.Location = New System.Drawing.Point(10, 628)
         Footer.Name = "Footer"
-        Footer.Size = New System.Drawing.Size(1124, 109)
+        Footer.Size = New System.Drawing.Size(974, 109)
         Footer.TabIndex = 11
         Footer.TabStop = False
         '
@@ -136,10 +144,7 @@ Partial Class Timetable
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Inse)
-        Me.GroupBox1.Controls.Add(Me.Web)
-        Me.GroupBox1.Controls.Add(Me.MathFun)
-        Me.GroupBox1.Controls.Add(Me.Gude)
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.Info
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.Label14)
@@ -156,192 +161,271 @@ Partial Class Timetable
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.ShapeContainer1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 34)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1124, 528)
+        Me.GroupBox1.Size = New System.Drawing.Size(948, 576)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Timetable"
         '
-        'Inse
-        '
-        Me.Inse.Location = New System.Drawing.Point(805, 357)
-        Me.Inse.Name = "Inse"
-        Me.Inse.Size = New System.Drawing.Size(142, 33)
-        Me.Inse.TabIndex = 19
-        Me.Inse.Text = "Inse" & Global.Microsoft.VisualBasic.ChrW(10) & "LG 2.06"
-        Me.Inse.Visible = False
-        '
-        'Web
-        '
-        Me.Web.Location = New System.Drawing.Point(637, 271)
-        Me.Web.Name = "Web"
-        Me.Web.Size = New System.Drawing.Size(142, 33)
-        Me.Web.TabIndex = 18
-        Me.Web.Text = "Web Scripting" & Global.Microsoft.VisualBasic.ChrW(10) & "PO 1.74"
-        Me.Web.Visible = False
-        '
-        'MathFun
-        '
-        Me.MathFun.Location = New System.Drawing.Point(260, 99)
-        Me.MathFun.Name = "MathFun"
-        Me.MathFun.Size = New System.Drawing.Size(142, 33)
-        Me.MathFun.TabIndex = 17
-        Me.MathFun.Text = "MathFun" & Global.Microsoft.VisualBasic.ChrW(10) & "BK 1.01"
-        Me.MathFun.Visible = False
-        '
-        'Gude
-        '
-        Me.Gude.Location = New System.Drawing.Point(96, 56)
-        Me.Gude.Name = "Gude"
-        Me.Gude.Size = New System.Drawing.Size(142, 36)
-        Me.Gude.TabIndex = 16
-        Me.Gude.Text = "Gude" & Global.Microsoft.VisualBasic.ChrW(10) & "BK 0.19"
-        Me.Gude.Visible = False
-        '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(12, 486)
+        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label16.Location = New System.Drawing.Point(12, 528)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(64, 13)
+        Me.Label16.Size = New System.Drawing.Size(66, 15)
         Me.Label16.TabIndex = 15
         Me.Label16.Text = "19:00-20:00"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(12, 443)
+        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label15.Location = New System.Drawing.Point(12, 480)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(64, 13)
+        Me.Label15.Size = New System.Drawing.Size(66, 15)
         Me.Label15.TabIndex = 14
         Me.Label15.Text = "18:00-19:00"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(12, 400)
+        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label14.Location = New System.Drawing.Point(14, 432)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(64, 13)
+        Me.Label14.Size = New System.Drawing.Size(66, 15)
         Me.Label14.TabIndex = 13
         Me.Label14.Text = "17:00-18:00"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(12, 357)
+        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label13.Location = New System.Drawing.Point(12, 384)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(64, 13)
+        Me.Label13.Size = New System.Drawing.Size(66, 15)
         Me.Label13.TabIndex = 12
         Me.Label13.Text = "16:00-17:00"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(12, 314)
+        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label12.Location = New System.Drawing.Point(10, 336)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(64, 13)
+        Me.Label12.Size = New System.Drawing.Size(66, 15)
         Me.Label12.TabIndex = 11
         Me.Label12.Text = "15:00-16:00"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(12, 271)
+        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label11.Location = New System.Drawing.Point(13, 288)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(64, 13)
+        Me.Label11.Size = New System.Drawing.Size(66, 15)
         Me.Label11.TabIndex = 10
         Me.Label11.Text = "14:00-15:00"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(12, 228)
+        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label10.Location = New System.Drawing.Point(12, 240)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(64, 13)
+        Me.Label10.Size = New System.Drawing.Size(66, 15)
         Me.Label10.TabIndex = 9
         Me.Label10.Text = "13:00-14:00"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(12, 185)
+        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label9.Location = New System.Drawing.Point(12, 192)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(64, 13)
+        Me.Label9.Size = New System.Drawing.Size(66, 15)
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "12:00-13:00"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 142)
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label8.Location = New System.Drawing.Point(12, 144)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 13)
+        Me.Label8.Size = New System.Drawing.Size(66, 15)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "11:00-12:00"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(12, 99)
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label7.Location = New System.Drawing.Point(12, 96)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 13)
+        Me.Label7.Size = New System.Drawing.Size(66, 15)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "10:00-11:00"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 56)
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label6.Location = New System.Drawing.Point(12, 48)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 13)
+        Me.Label6.Size = New System.Drawing.Size(66, 15)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "09:00-10:00"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label5.Location = New System.Drawing.Point(850, 20)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(35, 13)
+        Me.Label5.Size = New System.Drawing.Size(37, 15)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Friday"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label4.Location = New System.Drawing.Point(670, 20)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 13)
+        Me.Label4.Size = New System.Drawing.Size(53, 15)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Thursday"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label3.Location = New System.Drawing.Point(490, 20)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(64, 13)
+        Me.Label3.Size = New System.Drawing.Size(66, 15)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Wednesday"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label2.Location = New System.Drawing.Point(310, 20)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 13)
+        Me.Label2.Size = New System.Drawing.Size(50, 15)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Tuesday"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label1.Location = New System.Drawing.Point(130, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
+        Me.Label1.Size = New System.Drawing.Size(47, 15)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Monday"
+        '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(3, 16)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape11, Me.LineShape10, Me.LineShape9, Me.LineShape8, Me.LineShape7, Me.LineShape6, Me.LineShape5, Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(942, 557)
+        Me.ShapeContainer1.TabIndex = 16
+        Me.ShapeContainer1.TabStop = False
+        '
+        'LineShape11
+        '
+        Me.LineShape11.Name = "LineShape11"
+        Me.LineShape11.X1 = 9
+        Me.LineShape11.X2 = 915
+        Me.LineShape11.Y1 = 510
+        Me.LineShape11.Y2 = 510
+        '
+        'LineShape10
+        '
+        Me.LineShape10.Name = "LineShape10"
+        Me.LineShape10.X1 = 9
+        Me.LineShape10.X2 = 915
+        Me.LineShape10.Y1 = 318
+        Me.LineShape10.Y2 = 318
+        '
+        'LineShape9
+        '
+        Me.LineShape9.Name = "LineShape9"
+        Me.LineShape9.X1 = 9
+        Me.LineShape9.X2 = 915
+        Me.LineShape9.Y1 = 462
+        Me.LineShape9.Y2 = 462
+        '
+        'LineShape8
+        '
+        Me.LineShape8.Name = "LineShape8"
+        Me.LineShape8.X1 = 9
+        Me.LineShape8.X2 = 915
+        Me.LineShape8.Y1 = 414
+        Me.LineShape8.Y2 = 414
+        '
+        'LineShape7
+        '
+        Me.LineShape7.Name = "LineShape7"
+        Me.LineShape7.X1 = 9
+        Me.LineShape7.X2 = 915
+        Me.LineShape7.Y1 = 366
+        Me.LineShape7.Y2 = 366
+        '
+        'LineShape6
+        '
+        Me.LineShape6.Name = "LineShape6"
+        Me.LineShape6.X1 = 9
+        Me.LineShape6.X2 = 915
+        Me.LineShape6.Y1 = 270
+        Me.LineShape6.Y2 = 270
+        '
+        'LineShape5
+        '
+        Me.LineShape5.Name = "LineShape5"
+        Me.LineShape5.X1 = 9
+        Me.LineShape5.X2 = 915
+        Me.LineShape5.Y1 = 222
+        Me.LineShape5.Y2 = 222
+        '
+        'LineShape4
+        '
+        Me.LineShape4.Name = "LineShape4"
+        Me.LineShape4.X1 = 9
+        Me.LineShape4.X2 = 915
+        Me.LineShape4.Y1 = 174
+        Me.LineShape4.Y2 = 174
+        '
+        'LineShape3
+        '
+        Me.LineShape3.Name = "LineShape3"
+        Me.LineShape3.X1 = 9
+        Me.LineShape3.X2 = 915
+        Me.LineShape3.Y1 = 126
+        Me.LineShape3.Y2 = 126
+        '
+        'LineShape2
+        '
+        Me.LineShape2.Name = "LineShape2"
+        Me.LineShape2.X1 = 9
+        Me.LineShape2.X2 = 915
+        Me.LineShape2.Y1 = 78
+        Me.LineShape2.Y2 = 78
+        '
+        'LineShape1
+        '
+        Me.LineShape1.Name = "LineShape1"
+        Me.LineShape1.X1 = 9
+        Me.LineShape1.X2 = 915
+        Me.LineShape1.Y1 = 30
+        Me.LineShape1.Y2 = 30
         '
         'newLesson
         '
@@ -367,7 +451,7 @@ Partial Class Timetable
         Me.DateLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DateLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DateLabel.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateLabel.Location = New System.Drawing.Point(914, 2)
+        Me.DateLabel.Location = New System.Drawing.Point(838, 5)
         Me.DateLabel.Name = "DateLabel"
         Me.DateLabel.Size = New System.Drawing.Size(59, 27)
         Me.DateLabel.TabIndex = 15
@@ -381,7 +465,7 @@ Partial Class Timetable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1148, 718)
+        Me.ClientSize = New System.Drawing.Size(996, 749)
         Me.Controls.Add(Me.DateLabel)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.newLesson)
@@ -424,8 +508,16 @@ Partial Class Timetable
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents DateLabel As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents Gude As System.Windows.Forms.RichTextBox
-    Friend WithEvents Inse As System.Windows.Forms.RichTextBox
-    Friend WithEvents Web As System.Windows.Forms.RichTextBox
-    Friend WithEvents MathFun As System.Windows.Forms.RichTextBox
+    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
+    Friend WithEvents LineShape11 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape10 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape9 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape8 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape7 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape6 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape5 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape4 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape3 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
 End Class
