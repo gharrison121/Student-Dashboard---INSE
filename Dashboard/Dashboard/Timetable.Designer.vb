@@ -30,7 +30,7 @@ Partial Class Timetable
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.UniPorts = New System.Windows.Forms.LinkLabel()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TimetableBox = New System.Windows.Forms.GroupBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -60,12 +60,35 @@ Partial Class Timetable
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.newLesson = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BackMain = New System.Windows.Forms.Button()
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.newSubject = New System.Windows.Forms.GroupBox()
+        Me.ColourError = New System.Windows.Forms.Label()
+        Me.DayError = New System.Windows.Forms.Label()
+        Me.TimeError = New System.Windows.Forms.Label()
+        Me.RoomError = New System.Windows.Forms.Label()
+        Me.SubjectError = New System.Windows.Forms.Label()
+        Me.submit = New System.Windows.Forms.Button()
+        Me.Colour = New System.Windows.Forms.ComboBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Comments = New System.Windows.Forms.RichTextBox()
+        Me.Day = New System.Windows.Forms.ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Time = New System.Windows.Forms.ComboBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Room = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Subject = New System.Windows.Forms.TextBox()
+        Me.Cancel = New System.Windows.Forms.Button()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
         Footer = New System.Windows.Forms.GroupBox()
         Footer.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.TimetableBox.SuspendLayout()
+        Me.newSubject.SuspendLayout()
         Me.SuspendLayout()
         '
         'Footer
@@ -142,32 +165,33 @@ Partial Class Timetable
         Me.UniPorts.Tag = "http://www.port.ac.uk/"
         Me.UniPorts.Text = "University Of Portsmouth"
         '
-        'GroupBox1
+        'TimetableBox
         '
-        Me.GroupBox1.BackColor = System.Drawing.SystemColors.Info
-        Me.GroupBox1.Controls.Add(Me.Label16)
-        Me.GroupBox1.Controls.Add(Me.Label15)
-        Me.GroupBox1.Controls.Add(Me.Label14)
-        Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.ShapeContainer1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 34)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(948, 576)
-        Me.GroupBox1.TabIndex = 12
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Timetable"
+        Me.TimetableBox.BackColor = System.Drawing.SystemColors.Info
+        Me.TimetableBox.Controls.Add(Me.newSubject)
+        Me.TimetableBox.Controls.Add(Me.Label16)
+        Me.TimetableBox.Controls.Add(Me.Label15)
+        Me.TimetableBox.Controls.Add(Me.Label14)
+        Me.TimetableBox.Controls.Add(Me.Label13)
+        Me.TimetableBox.Controls.Add(Me.Label12)
+        Me.TimetableBox.Controls.Add(Me.Label11)
+        Me.TimetableBox.Controls.Add(Me.Label10)
+        Me.TimetableBox.Controls.Add(Me.Label9)
+        Me.TimetableBox.Controls.Add(Me.Label8)
+        Me.TimetableBox.Controls.Add(Me.Label7)
+        Me.TimetableBox.Controls.Add(Me.Label6)
+        Me.TimetableBox.Controls.Add(Me.Label5)
+        Me.TimetableBox.Controls.Add(Me.Label4)
+        Me.TimetableBox.Controls.Add(Me.Label3)
+        Me.TimetableBox.Controls.Add(Me.Label2)
+        Me.TimetableBox.Controls.Add(Me.Label1)
+        Me.TimetableBox.Controls.Add(Me.ShapeContainer1)
+        Me.TimetableBox.Location = New System.Drawing.Point(12, 34)
+        Me.TimetableBox.Name = "TimetableBox"
+        Me.TimetableBox.Size = New System.Drawing.Size(948, 576)
+        Me.TimetableBox.TabIndex = 12
+        Me.TimetableBox.TabStop = False
+        Me.TimetableBox.Text = "Timetable"
         '
         'Label16
         '
@@ -283,7 +307,7 @@ Partial Class Timetable
         '
         Me.Label5.AutoSize = True
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Location = New System.Drawing.Point(850, 20)
+        Me.Label5.Location = New System.Drawing.Point(774, 20)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(37, 15)
         Me.Label5.TabIndex = 4
@@ -293,7 +317,7 @@ Partial Class Timetable
         '
         Me.Label4.AutoSize = True
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label4.Location = New System.Drawing.Point(670, 20)
+        Me.Label4.Location = New System.Drawing.Point(604, 20)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(53, 15)
         Me.Label4.TabIndex = 3
@@ -303,7 +327,7 @@ Partial Class Timetable
         '
         Me.Label3.AutoSize = True
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Location = New System.Drawing.Point(490, 20)
+        Me.Label3.Location = New System.Drawing.Point(434, 20)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 15)
         Me.Label3.TabIndex = 2
@@ -313,7 +337,7 @@ Partial Class Timetable
         '
         Me.Label2.AutoSize = True
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label2.Location = New System.Drawing.Point(310, 20)
+        Me.Label2.Location = New System.Drawing.Point(264, 20)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(50, 15)
         Me.Label2.TabIndex = 1
@@ -323,7 +347,7 @@ Partial Class Timetable
         '
         Me.Label1.AutoSize = True
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Location = New System.Drawing.Point(130, 20)
+        Me.Label1.Location = New System.Drawing.Point(94, 20)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 15)
         Me.Label1.TabIndex = 0
@@ -436,14 +460,14 @@ Partial Class Timetable
         Me.newLesson.Text = "New Lesson"
         Me.newLesson.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BackMain
         '
-        Me.Button2.Location = New System.Drawing.Point(106, 5)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "Back"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BackMain.Location = New System.Drawing.Point(106, 5)
+        Me.BackMain.Name = "BackMain"
+        Me.BackMain.Size = New System.Drawing.Size(75, 23)
+        Me.BackMain.TabIndex = 14
+        Me.BackMain.Text = "Back"
+        Me.BackMain.UseVisualStyleBackColor = True
         '
         'DateLabel
         '
@@ -461,23 +485,258 @@ Partial Class Timetable
         '
         Me.Timer1.Enabled = True
         '
+        'newSubject
+        '
+        Me.newSubject.Controls.Add(Me.ColourError)
+        Me.newSubject.Controls.Add(Me.DayError)
+        Me.newSubject.Controls.Add(Me.TimeError)
+        Me.newSubject.Controls.Add(Me.RoomError)
+        Me.newSubject.Controls.Add(Me.SubjectError)
+        Me.newSubject.Controls.Add(Me.submit)
+        Me.newSubject.Controls.Add(Me.Colour)
+        Me.newSubject.Controls.Add(Me.Label19)
+        Me.newSubject.Controls.Add(Me.Label20)
+        Me.newSubject.Controls.Add(Me.Comments)
+        Me.newSubject.Controls.Add(Me.Day)
+        Me.newSubject.Controls.Add(Me.Label21)
+        Me.newSubject.Controls.Add(Me.Time)
+        Me.newSubject.Controls.Add(Me.Label22)
+        Me.newSubject.Controls.Add(Me.Room)
+        Me.newSubject.Controls.Add(Me.Label23)
+        Me.newSubject.Controls.Add(Me.Label24)
+        Me.newSubject.Controls.Add(Me.Subject)
+        Me.newSubject.Controls.Add(Me.Cancel)
+        Me.newSubject.Controls.Add(Me.Label25)
+        Me.newSubject.Controls.Add(Me.Label26)
+        Me.newSubject.Location = New System.Drawing.Point(283, 208)
+        Me.newSubject.Name = "newSubject"
+        Me.newSubject.Size = New System.Drawing.Size(945, 495)
+        Me.newSubject.TabIndex = 18
+        Me.newSubject.TabStop = False
+        Me.newSubject.Text = "New Subject"
+        Me.newSubject.Visible = False
+        '
+        'ColourError
+        '
+        Me.ColourError.AutoSize = True
+        Me.ColourError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.ColourError.ForeColor = System.Drawing.Color.Red
+        Me.ColourError.Location = New System.Drawing.Point(535, 262)
+        Me.ColourError.Name = "ColourError"
+        Me.ColourError.Size = New System.Drawing.Size(107, 13)
+        Me.ColourError.TabIndex = 49
+        Me.ColourError.Text = "Please enter a colour"
+        Me.ColourError.Visible = False
+        '
+        'DayError
+        '
+        Me.DayError.AutoSize = True
+        Me.DayError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.DayError.ForeColor = System.Drawing.Color.Red
+        Me.DayError.Location = New System.Drawing.Point(194, 319)
+        Me.DayError.Name = "DayError"
+        Me.DayError.Size = New System.Drawing.Size(95, 13)
+        Me.DayError.TabIndex = 48
+        Me.DayError.Text = "Please enter a day"
+        Me.DayError.Visible = False
+        '
+        'TimeError
+        '
+        Me.TimeError.AutoSize = True
+        Me.TimeError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.TimeError.ForeColor = System.Drawing.Color.Red
+        Me.TimeError.Location = New System.Drawing.Point(194, 259)
+        Me.TimeError.Name = "TimeError"
+        Me.TimeError.Size = New System.Drawing.Size(97, 13)
+        Me.TimeError.TabIndex = 47
+        Me.TimeError.Text = "Please enter a time"
+        Me.TimeError.Visible = False
+        '
+        'RoomError
+        '
+        Me.RoomError.AutoSize = True
+        Me.RoomError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.RoomError.ForeColor = System.Drawing.Color.Red
+        Me.RoomError.Location = New System.Drawing.Point(175, 202)
+        Me.RoomError.Name = "RoomError"
+        Me.RoomError.Size = New System.Drawing.Size(126, 13)
+        Me.RoomError.TabIndex = 46
+        Me.RoomError.Text = "Please enter a valid room"
+        Me.RoomError.Visible = False
+        '
+        'SubjectError
+        '
+        Me.SubjectError.AutoSize = True
+        Me.SubjectError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.SubjectError.ForeColor = System.Drawing.Color.Red
+        Me.SubjectError.Location = New System.Drawing.Point(175, 140)
+        Me.SubjectError.Name = "SubjectError"
+        Me.SubjectError.Size = New System.Drawing.Size(112, 13)
+        Me.SubjectError.TabIndex = 45
+        Me.SubjectError.Text = "Please enter a subject"
+        Me.SubjectError.Visible = False
+        '
+        'submit
+        '
+        Me.submit.Location = New System.Drawing.Point(740, 406)
+        Me.submit.Name = "submit"
+        Me.submit.Size = New System.Drawing.Size(75, 23)
+        Me.submit.TabIndex = 44
+        Me.submit.Text = "Submit"
+        Me.submit.UseVisualStyleBackColor = True
+        '
+        'Colour
+        '
+        Me.Colour.FormattingEnabled = True
+        Me.Colour.Items.AddRange(New Object() {"Red", "Orange", "Yellow", "Green", "Blue", "White", "Turquoise", "Pink", "Black", "Brown", "Grey"})
+        Me.Colour.Location = New System.Drawing.Point(372, 259)
+        Me.Colour.Name = "Colour"
+        Me.Colour.Size = New System.Drawing.Size(121, 21)
+        Me.Colour.TabIndex = 43
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(369, 243)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(37, 13)
+        Me.Label19.TabIndex = 42
+        Me.Label19.Text = "Colour"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(369, 123)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(56, 13)
+        Me.Label20.TabIndex = 41
+        Me.Label20.Text = "Comments"
+        '
+        'Comments
+        '
+        Me.Comments.Location = New System.Drawing.Point(372, 140)
+        Me.Comments.Name = "Comments"
+        Me.Comments.Size = New System.Drawing.Size(308, 66)
+        Me.Comments.TabIndex = 40
+        Me.Comments.Text = ""
+        '
+        'Day
+        '
+        Me.Day.FormattingEnabled = True
+        Me.Day.Items.AddRange(New Object() {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"})
+        Me.Day.Location = New System.Drawing.Point(57, 319)
+        Me.Day.MaxDropDownItems = 5
+        Me.Day.Name = "Day"
+        Me.Day.Size = New System.Drawing.Size(121, 21)
+        Me.Day.TabIndex = 39
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(54, 302)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(26, 13)
+        Me.Label21.TabIndex = 38
+        Me.Label21.Text = "Day"
+        '
+        'Time
+        '
+        Me.Time.FormattingEnabled = True
+        Me.Time.Items.AddRange(New Object() {"09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00"})
+        Me.Time.Location = New System.Drawing.Point(54, 259)
+        Me.Time.MaxDropDownItems = 11
+        Me.Time.Name = "Time"
+        Me.Time.Size = New System.Drawing.Size(121, 21)
+        Me.Time.TabIndex = 37
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(54, 243)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(30, 13)
+        Me.Label22.TabIndex = 36
+        Me.Label22.Text = "Time"
+        '
+        'Room
+        '
+        Me.Room.Location = New System.Drawing.Point(54, 202)
+        Me.Room.Name = "Room"
+        Me.Room.Size = New System.Drawing.Size(100, 20)
+        Me.Room.TabIndex = 35
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(51, 185)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(99, 13)
+        Me.Label23.TabIndex = 34
+        Me.Label23.Text = "Building/room code"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(51, 167)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(0, 13)
+        Me.Label24.TabIndex = 33
+        '
+        'Subject
+        '
+        Me.Subject.Location = New System.Drawing.Point(51, 140)
+        Me.Subject.Name = "Subject"
+        Me.Subject.Size = New System.Drawing.Size(100, 20)
+        Me.Subject.TabIndex = 32
+        '
+        'Cancel
+        '
+        Me.Cancel.Location = New System.Drawing.Point(821, 406)
+        Me.Cancel.Name = "Cancel"
+        Me.Cancel.Size = New System.Drawing.Size(75, 23)
+        Me.Cancel.TabIndex = 31
+        Me.Cancel.Text = "Cancel"
+        Me.Cancel.UseVisualStyleBackColor = True
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(48, 123)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(43, 13)
+        Me.Label25.TabIndex = 30
+        Me.Label25.Text = "Subject"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label26.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(702, 65)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(57, 25)
+        Me.Label26.TabIndex = 29
+        Me.Label26.Text = "Date"
+        '
         'Timetable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(996, 749)
         Me.Controls.Add(Me.DateLabel)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.BackMain)
         Me.Controls.Add(Me.newLesson)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.TimetableBox)
         Me.Controls.Add(Footer)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Timetable"
         Me.Text = "Timetable"
         Footer.ResumeLayout(False)
         Footer.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.TimetableBox.ResumeLayout(False)
+        Me.TimetableBox.PerformLayout()
+        Me.newSubject.ResumeLayout(False)
+        Me.newSubject.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -487,14 +746,14 @@ Partial Class Timetable
     Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
     Friend WithEvents UniPorts As System.Windows.Forms.LinkLabel
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents TimetableBox As System.Windows.Forms.GroupBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents newLesson As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents BackMain As System.Windows.Forms.Button
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
@@ -520,4 +779,26 @@ Partial Class Timetable
     Friend WithEvents LineShape3 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents newSubject As System.Windows.Forms.GroupBox
+    Friend WithEvents ColourError As System.Windows.Forms.Label
+    Friend WithEvents DayError As System.Windows.Forms.Label
+    Friend WithEvents TimeError As System.Windows.Forms.Label
+    Friend WithEvents RoomError As System.Windows.Forms.Label
+    Friend WithEvents SubjectError As System.Windows.Forms.Label
+    Friend WithEvents submit As System.Windows.Forms.Button
+    Friend WithEvents Colour As System.Windows.Forms.ComboBox
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Comments As System.Windows.Forms.RichTextBox
+    Friend WithEvents Day As System.Windows.Forms.ComboBox
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Time As System.Windows.Forms.ComboBox
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents Room As System.Windows.Forms.TextBox
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents Subject As System.Windows.Forms.TextBox
+    Friend WithEvents Cancel As System.Windows.Forms.Button
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents Label26 As System.Windows.Forms.Label
 End Class
