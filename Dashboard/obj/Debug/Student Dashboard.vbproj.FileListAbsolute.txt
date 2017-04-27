@@ -1,0 +1,78 @@
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Bus.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.NewClass.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Timetable.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Reminder.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Main.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Register.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.LogIn.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\Student Dashboard.vbproj.GenerateResource.Cache
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\bin\Debug\Student Dashboard.exe.config
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.config
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Bus.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Timetable.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Reminder.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Main.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Register.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.LogIn.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Resources.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.vbproj.GenerateResource.Cache
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.config
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Accounts.mdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Bus.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.NewClass.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Timetable.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Reminder.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Main.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Register.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.LogIn.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Resources.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.vbproj.GenerateResource.Cache
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.manifest
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.application
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe.manifest
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.application
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Accounts.mdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.manifest
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.application
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe.manifest
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.application
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.config
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.xml
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.pdb
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Accounts.mdb
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.manifest
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.application
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.pdb
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\bin\Debug\Student Dashboard.xml
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Bus.resources
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Timetable.resources
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Reminder.resources
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Main.resources
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Register.resources
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.LogIn.resources
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\StudentDashboard.Resources.resources
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.vbproj.GenerateResource.Cache
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe.manifest
+N:\Desktop\Student-Dashboard---INSE-master\Dashboard\Dashboard\obj\Debug\Student Dashboard.application

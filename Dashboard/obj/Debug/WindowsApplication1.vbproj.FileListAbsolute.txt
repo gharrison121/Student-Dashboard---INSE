@@ -1,0 +1,48 @@
+C:\Users\up787321\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\up787321\AppData\Local\Temporary Projects\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\up787321\AppData\Local\Temporary Projects\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\up787321\AppData\Local\Temporary Projects\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.LogIn.resources
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Register.resources
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Main.resources
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Reminder.resources
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Bus.resources
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.NewClass.resources
+N:\Inse\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Timetable.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Bus.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.NewClass.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Timetable.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Reminder.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Main.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Register.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.LogIn.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\gharr\Documents\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\gharr\Documents\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\gharr\Documents\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\gharr\Documents\Dashboard\Dashboard vb project\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\gharr\Source\Repos\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\gharr\Source\Repos\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\gharr\Source\Repos\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\gharr\Source\Repos\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
