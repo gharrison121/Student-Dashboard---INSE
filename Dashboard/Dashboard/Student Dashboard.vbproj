@@ -113,12 +113,6 @@
     <Compile Include="Bus.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewClass.Designer.vb">
-      <DependentUpon>NewClass.vb</DependentUpon>
-    </Compile>
-    <Compile Include="NewClass.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Timetable.Designer.vb">
       <DependentUpon>Timetable.vb</DependentUpon>
     </Compile>
@@ -168,9 +162,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Bus.resx">
       <DependentUpon>Bus.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewClass.resx">
-      <DependentUpon>NewClass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Timetable.resx">
       <DependentUpon>Timetable.vb</DependentUpon>

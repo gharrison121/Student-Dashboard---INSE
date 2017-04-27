@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Student Dashboard.exe" size="3086848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Student Dashboard.exe" size="2720768">
       <assemblyIdentity name="Student Dashboard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LqgF6pL2nEN8ZDlki23T9VIPoEdf+BOP5nrNKM4dfDY=</dsig:DigestValue>
+        <dsig:DigestValue>ucV2SrQR2jGkiw8qo1mg9RhM7VuiacII1jvIodb+5+k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
