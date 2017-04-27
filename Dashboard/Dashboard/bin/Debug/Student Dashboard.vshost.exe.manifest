@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Student Dashboard.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Student Dashboard.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Student Dashboard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -54,7 +54,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vXMNaamryENbCP087IcfCHyQ1hkQcDJe6U2rHKNEo24=</dsig:DigestValue>
+        <dsig:DigestValue>LY006SQqK6rc9H9T22SKAqb5bSzs8isCCFjYO/yhy/E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -67,13 +67,13 @@
       <dsig:DigestValue>i7YzIgErftamdpT+bQiEalFUfxEoutqMzEbahC/LYUU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Student Dashboard.exe.config" size="2027">
+  <file name="Student Dashboard.exe.config" size="2042">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>w+XKiMqDCPTdxuts3d0Z9+qQhvsOO0s8+4JtvarTgqk=</dsig:DigestValue>
+      <dsig:DigestValue>flrylmXxkvhGCazS3pYGBpXItEaofVRTqCJ1WqEnH6I=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
