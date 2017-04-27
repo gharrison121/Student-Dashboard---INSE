@@ -20,6 +20,7 @@ C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.pdb
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.xml
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Bus.resources
+C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.NewClass.resources
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Timetable.resources
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Reminder.resources
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\StudentDashboard.Main.resources
@@ -56,3 +57,45 @@ C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\bin\Debug\Student Dashboard.application
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe.manifest
 C:\Users\gharr\Documents\GitHub\Student-Dashboard---INSE\Dashboard\Dashboard\obj\Debug\Student Dashboard.application
+N:\Desktop\new project\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.config
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\Student Dashboard.xml
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\Student Dashboard.pdb
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\StudentDashboard.Bus.resources
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\StudentDashboard.NewClass.resources
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\StudentDashboard.Timetable.resources
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\StudentDashboard.Reminder.resources
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\StudentDashboard.Main.resources
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\StudentDashboard.Register.resources
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\StudentDashboard.LogIn.resources
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\StudentDashboard.Resources.resources
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\Student Dashboard.vbproj.GenerateResource.Cache
+N:\Desktop\new project\Dashboard\Dashboard\bin\Debug\Accounts.mdb
+N:\Desktop\new project\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.manifest
+N:\Desktop\new project\Dashboard\Dashboard\bin\Debug\Student Dashboard.application
+N:\Desktop\new project\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe
+N:\Desktop\new project\Dashboard\Dashboard\bin\Debug\Student Dashboard.pdb
+N:\Desktop\new project\Dashboard\Dashboard\bin\Debug\Student Dashboard.xml
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe.manifest
+N:\Desktop\new project\Dashboard\Dashboard\obj\Debug\Student Dashboard.application
+C:\Users\gharr\Desktop\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.config
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\Student Dashboard.xml
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\Student Dashboard.pdb
+C:\Users\gharr\Desktop\Dashboard\Dashboard\bin\Debug\Accounts.mdb
+C:\Users\gharr\Desktop\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe.manifest
+C:\Users\gharr\Desktop\Dashboard\Dashboard\bin\Debug\Student Dashboard.application
+C:\Users\gharr\Desktop\Dashboard\Dashboard\bin\Debug\Student Dashboard.exe
+C:\Users\gharr\Desktop\Dashboard\Dashboard\bin\Debug\Student Dashboard.pdb
+C:\Users\gharr\Desktop\Dashboard\Dashboard\bin\Debug\Student Dashboard.xml
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\StudentDashboard.Bus.resources
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\StudentDashboard.NewClass.resources
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\StudentDashboard.Timetable.resources
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\StudentDashboard.Reminder.resources
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\StudentDashboard.Main.resources
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\StudentDashboard.Register.resources
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\StudentDashboard.LogIn.resources
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\StudentDashboard.Resources.resources
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\Student Dashboard.vbproj.GenerateResource.Cache
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\Student Dashboard.exe.manifest
+C:\Users\gharr\Desktop\Dashboard\Dashboard\obj\Debug\Student Dashboard.application

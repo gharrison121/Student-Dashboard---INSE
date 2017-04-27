@@ -177,4 +177,9 @@
     Private Sub SubjectDouble_Click(sender As Object, e As EventArgs)
         sender.Dispose()
     End Sub
+
+    Shared Function lessonInfo() As Object
+        Throw New NotImplementedException
+    End Function
+
 End Class

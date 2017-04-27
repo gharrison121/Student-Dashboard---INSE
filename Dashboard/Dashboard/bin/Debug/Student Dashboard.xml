@@ -6,7 +6,48 @@ StudentDashboard
 </name>
 </assembly>
 <members>
-<member name="T:StudentDashboard.AccountsDataSet.usersDataTable">
+<member name="P:StudentDashboard.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:StudentDashboard.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:StudentDashboard.My.Resources.Resources.BusWeekday">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentDashboard.My.Resources.Resources.BusWeekend">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentDashboard.My.Resources.Resources.langstonecampus">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentDashboard.My.Resources.Resources.log_in_logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentDashboard.My.Resources.Resources.out_of_term_table_new">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentDashboard.My.Resources.Resources.outoftermbus">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentDashboard.My.Resources.Resources.term_table_new">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:StudentDashboard.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:StudentDashboard.AccountsDataSet.usersDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -57,39 +98,6 @@ Used to sort self-referenced table's rows
 </member><member name="T:StudentDashboard.AccountsDataSetTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:StudentDashboard.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:StudentDashboard.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:StudentDashboard.My.Resources.Resources.BusWeekday">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:StudentDashboard.My.Resources.Resources.BusWeekend">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:StudentDashboard.My.Resources.Resources.langstonecampus">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:StudentDashboard.My.Resources.Resources.log_in_logo">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:StudentDashboard.My.Resources.Resources.outoftermbus">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="T:StudentDashboard.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
 </members>
