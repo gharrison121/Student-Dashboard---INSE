@@ -43,7 +43,7 @@ Partial Class Register
         Me.RegisterButton.Location = New System.Drawing.Point(559, 463)
         Me.RegisterButton.Name = "RegisterButton"
         Me.RegisterButton.Size = New System.Drawing.Size(75, 23)
-        Me.RegisterButton.TabIndex = 13
+        Me.RegisterButton.TabIndex = 4
         Me.RegisterButton.Text = "Register"
         Me.RegisterButton.UseVisualStyleBackColor = True
         '
@@ -73,14 +73,14 @@ Partial Class Register
         Me.PasswordInput.Name = "PasswordInput"
         Me.PasswordInput.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordInput.Size = New System.Drawing.Size(240, 20)
-        Me.PasswordInput.TabIndex = 8
+        Me.PasswordInput.TabIndex = 2
         '
         'UserNameInput
         '
         Me.UserNameInput.Location = New System.Drawing.Point(394, 340)
         Me.UserNameInput.Name = "UserNameInput"
         Me.UserNameInput.Size = New System.Drawing.Size(240, 20)
-        Me.UserNameInput.TabIndex = 7
+        Me.UserNameInput.TabIndex = 1
         '
         'Label3
         '
@@ -97,7 +97,7 @@ Partial Class Register
         Me.TextBox1.Location = New System.Drawing.Point(394, 302)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(240, 20)
-        Me.TextBox1.TabIndex = 14
+        Me.TextBox1.TabIndex = 0
         '
         'Label4
         '
@@ -115,7 +115,7 @@ Partial Class Register
         Me.ConfirmPasswordInput.Name = "ConfirmPasswordInput"
         Me.ConfirmPasswordInput.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.ConfirmPasswordInput.Size = New System.Drawing.Size(240, 20)
-        Me.ConfirmPasswordInput.TabIndex = 16
+        Me.ConfirmPasswordInput.TabIndex = 3
         '
         'PasswordError
         '
@@ -141,7 +141,7 @@ Partial Class Register
         Me.CancelBtn.Location = New System.Drawing.Point(394, 463)
         Me.CancelBtn.Name = "CancelBtn"
         Me.CancelBtn.Size = New System.Drawing.Size(75, 23)
-        Me.CancelBtn.TabIndex = 19
+        Me.CancelBtn.TabIndex = 5
         Me.CancelBtn.Text = "Cancel"
         Me.CancelBtn.UseVisualStyleBackColor = True
         '
@@ -149,7 +149,7 @@ Partial Class Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1105, 601)
+        Me.ClientSize = New System.Drawing.Size(1105, 508)
         Me.Controls.Add(Me.CancelBtn)
         Me.Controls.Add(Me.PasswordError)
         Me.Controls.Add(Me.Label4)

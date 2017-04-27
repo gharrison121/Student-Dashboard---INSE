@@ -3,7 +3,9 @@ Public Class Register
 
     Private Sub Register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.BackColor = Color.DarkViolet
+        Me.Location = New Point(2, 2)
         PasswordError.Visible = False
+        AcceptButton = RegisterButton
     End Sub
 
     Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click

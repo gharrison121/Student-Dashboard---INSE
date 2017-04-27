@@ -1,6 +1,7 @@
 ﻿Public Class Main
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Location = New Point(2, 2)
         ' Style
         Me.BackColor = Color.DarkViolet
         ' Set username to one logged in with, saves connection to DB
@@ -96,5 +97,10 @@ LinkLabel5.LinkClicked
         ReminderTwo.Visible = False
         My.Settings.RemTwoVis = False
         My.Settings.Save()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        LogIn.Show()
     End Sub
 End Class
