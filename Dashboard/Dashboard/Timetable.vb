@@ -14,6 +14,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BackMain.Click
         'closes the timetable window and bring back the main window
         Me.Hide()
+        newSubject.Visible = False
         Main.Show()
     End Sub
 
@@ -39,6 +40,8 @@
             DayError.Visible = True
         ElseIf Colour.SelectedIndex = -1 Then
             ColourError.Visible = True
+        ElseIf Type.SelectedIndex = -1 Then
+            TypeError.Visible = True
         Else
 
 
@@ -46,17 +49,27 @@
             Dim newLesson As New GroupBox
             Me.Controls.Add(newLesson)
             TimetableBox.Controls.Add(newLesson)
-            newLesson.Size = New Size(178, 49)
+            newLesson.Size = New Size(250, 49)
             'create label for info to go into groupbox, add to groupbox, size and change location
             Dim roomLabel As New Label
             Me.Controls.Add(roomLabel)
             TimetableBox.Controls.Add(roomLabel)
-            roomLabel.Size = New Size(45, 13)
+            roomLabel.Size = New Size(100, 13)
+            newLesson.Controls.Add(roomLabel)
+            roomLabel.Location = New Point(6, 16)
+            'set up the label for the type of lecture
+            Dim TypeLecture As New Label
+            Me.Controls.Add(TypeLecture)
+            TimetableBox.Controls.Add(TypeLecture)
+            newLesson.Controls.Add(TypeLecture)
+            TypeLecture.Size = New Size(100, 13)
+            TypeLecture.Location = New Point(6, 29)
+
 
 
             'if all validation has passed then all areas on the subject for need to be filled out.
             ' setting the x and y location of the new subject group box
-            newLesson.Location = New Point((((Day.SelectedIndex + 1) * 170) + 94), ((Time.SelectedIndex + 1) * 48))
+            newLesson.Location = New Point((((Day.SelectedIndex) * 170) + 94), ((Time.SelectedIndex + 1) * 48))
 
             'setting the attributes of the subject once validation is complete
             newLesson.Text = Subject.Text
@@ -68,6 +81,7 @@
                 newLesson.BackColor = Color.Yellow
             ElseIf Colour.SelectedIndex = 3 Then
                 newLesson.BackColor = Color.Green
+                newLesson.ForeColor = Color.White
             ElseIf Colour.SelectedIndex = 4 Then
                 newLesson.BackColor = Color.Blue
                 newLesson.ForeColor = Color.White
@@ -92,7 +106,11 @@
             newLesson.Size = New Size(169, 49)
             'set the room number label and add it to the groupox (subject)
             roomLabel.Text = "Room: " + Room.Text
-
+            'change ID's of subject and bow to allow for new separate inputs
+            newLesson.Name = Subject.Text
+            roomLabel.Name = Room.Name
+            'set type of lecture
+            TypeLecture.Text = "Type: " + Type.SelectedItem.ToString()
 
             'hide all error messages for next input
             SubjectError.Visible = False
