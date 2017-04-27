@@ -47,6 +47,7 @@ Partial Class Main
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.ViewBusBtn = New System.Windows.Forms.Button()
         Me.TimetableButton = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Footer = New System.Windows.Forms.GroupBox()
         Footer.SuspendLayout()
         Me.ReminderOne.SuspendLayout()
@@ -161,6 +162,7 @@ Partial Class Main
         Me.DateLabel.AutoSize = True
         Me.DateLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DateLabel.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.DateLabel.Location = New System.Drawing.Point(799, 123)
         Me.DateLabel.Name = "DateLabel"
         Me.DateLabel.Size = New System.Drawing.Size(57, 25)
@@ -292,11 +294,21 @@ Partial Class Main
         Me.TimetableButton.Text = "Timetable"
         Me.TimetableButton.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(956, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Logout"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1157, 665)
+        Me.ClientSize = New System.Drawing.Size(1056, 665)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TimetableButton)
         Me.Controls.Add(Me.ViewBusBtn)
         Me.Controls.Add(Footer)
@@ -343,4 +355,5 @@ Partial Class Main
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
     Friend WithEvents CloseR1 As System.Windows.Forms.Button
     Friend WithEvents CloseR2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

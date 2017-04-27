@@ -4,7 +4,7 @@
         'creates a group box to represent a lesson and a label to put information into the group box
         'The group box and label is assembled here and then placement info and colours are added when submitted in new class window
         newSubject.Visible = True
-
+        AcceptButton = submit
 
 
 
@@ -38,32 +38,32 @@
             TimeError.Visible = True
         ElseIf Day.SelectedIndex = -1 Then
             DayError.Visible = True
-        ElseIf Colour.SelectedIndex = -1 Then
-            ColourError.Visible = True
         ElseIf Type.SelectedIndex = -1 Then
             TypeError.Visible = True
+        ElseIf Colour.SelectedIndex = -1 Then
+            ColourError.Visible = True
         Else
 
 
             'creating groupbox, add to form, size it to fit timetable
             Dim newLesson As New GroupBox
-            Me.Controls.Add(newLesson)
             TimetableBox.Controls.Add(newLesson)
             newLesson.Size = New Size(250, 49)
             'create label for info to go into groupbox, add to groupbox, size and change location
             Dim roomLabel As New Label
-            Me.Controls.Add(roomLabel)
-            TimetableBox.Controls.Add(roomLabel)
             roomLabel.Size = New Size(100, 13)
             newLesson.Controls.Add(roomLabel)
             roomLabel.Location = New Point(6, 16)
             'set up the label for the type of lecture
             Dim TypeLecture As New Label
-            Me.Controls.Add(TypeLecture)
-            TimetableBox.Controls.Add(TypeLecture)
             newLesson.Controls.Add(TypeLecture)
             TypeLecture.Size = New Size(100, 13)
             TypeLecture.Location = New Point(6, 29)
+            'set comments for info box
+            Dim CommentsText As New Label
+            newLesson.Controls.Add(CommentsText)
+            CommentsText.Visible = False
+            CommentsText.Location = New Point(6, 32)
 
 
 
@@ -100,6 +100,11 @@
             ElseIf Colour.SelectedIndex = 10 Then
                 newLesson.BackColor = Color.Gray
             End If
+            'add click show info handler for subjects
+            AddHandler newLesson.Click, AddressOf SubjectOne_Click
+            'Add double click delet for each subject
+            AddHandler newLesson.DoubleClick, AddressOf SubjectDouble_Click
+
             'setting the subject, room 
             newLesson.Text = Subject.Text
             'set the size of subject box
@@ -108,9 +113,12 @@
             roomLabel.Text = "Room: " + Room.Text
             'change ID's of subject and bow to allow for new separate inputs
             newLesson.Name = Subject.Text
-            roomLabel.Name = Room.Name
+            roomLabel.Name = Subject.Text + Room.Name
+            TypeLecture.Name = Subject.Text + Type.SelectedIndex.ToString()
             'set type of lecture
             TypeLecture.Text = "Type: " + Type.SelectedItem.ToString()
+            'set comments
+            CommentsText.Text = "Comments: " & Comments.Text
 
             'hide all error messages for next input
             SubjectError.Visible = False
@@ -138,5 +146,35 @@
         Day.SelectedIndex = -1
         Comments.Text = ""
         Colour.SelectedIndex = -1
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        DateLabel.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
+    End Sub
+
+    Private Sub newSubject_Enter(sender As Object, e As EventArgs) Handles newSubject.Enter
+
+    End Sub
+    Private Sub SubjectOne_Click(sender As Object, e As EventArgs)
+        Dim SubjectInfo As New RichTextBox
+        TimetableBox.Controls.Add(SubjectInfo)
+        SubjectInfo.BringToFront()
+        SubjectInfo.Visible = True
+        SubjectInfo.ReadOnly = True
+        SubjectInfo.Location = sender.Location
+        SubjectInfo.Text = "Subject: " & sender.Name.ToString() & vbNewLine
+        AddHandler SubjectInfo.DoubleClick, AddressOf SubjectDouble_Click
+        For Each ctrl As Control In sender.Controls
+            If TypeOf ctrl Is Label Then
+                SubjectInfo.Text &= ctrl.Text & vbNewLine
+
+            End If
+        Next
+
+
+
+    End Sub
+    Private Sub SubjectDouble_Click(sender As Object, e As EventArgs)
+        sender.Dispose()
     End Sub
 End Class

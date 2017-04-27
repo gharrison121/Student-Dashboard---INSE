@@ -4,11 +4,16 @@ Public Class LogIn
 
     Private Sub LogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.BackColor = Color.DarkViolet
+        Me.Location = New Point(2, 2)
+        AcceptButton = LogInButton
     End Sub
 
     Private Sub LogInButton_Click(sender As Object, e As EventArgs) Handles LogInButton.Click
         ' When 'Log In' is clicked -  call Sub LogIn and parse in two input values for username and password to validate input
         LogIn(UserNameInput, PasswordInput)
+        UserNameInput.Text = ""
+        PasswordInput.Text = ""
+
     End Sub
 
     Public Sub LogIn(usernameInp As TextBox, passwordInp As TextBox)
@@ -74,6 +79,8 @@ Public Class LogIn
         newRegister = New Register()
         newRegister.Show()
         newRegister.Show()
+        UserNameInput.Text = ""
+        PasswordInput.Text = ""
     End Sub
 
 End Class

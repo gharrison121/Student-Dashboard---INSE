@@ -2,6 +2,7 @@
 
     Private Sub Bus_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.BackColor = Color.DarkViolet
+        Me.Location = New Point(2, 2)
         DateLabel.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
         DateLabel.BackColor = Color.DarkViolet
         Weekend.Visible = False

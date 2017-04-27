@@ -26,6 +26,7 @@ Partial Class Timetable
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Timetable))
         Me.TimetableBox = New System.Windows.Forms.GroupBox()
         Me.newSubject = New System.Windows.Forms.GroupBox()
+        Me.TypeError = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Type = New System.Windows.Forms.ComboBox()
         Me.ColourError = New System.Windows.Forms.Label()
@@ -79,8 +80,9 @@ Partial Class Timetable
         Me.newLesson = New System.Windows.Forms.Button()
         Me.BackMain = New System.Windows.Forms.Button()
         Me.DateLabel = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.TypeError = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.TimetableBox.SuspendLayout()
         Me.newSubject.SuspendLayout()
         Me.SuspendLayout()
@@ -88,6 +90,7 @@ Partial Class Timetable
         'TimetableBox
         '
         Me.TimetableBox.BackColor = System.Drawing.SystemColors.Info
+        Me.TimetableBox.Controls.Add(Me.newSubject)
         Me.TimetableBox.Controls.Add(Me.Label16)
         Me.TimetableBox.Controls.Add(Me.Label15)
         Me.TimetableBox.Controls.Add(Me.Label14)
@@ -137,13 +140,25 @@ Partial Class Timetable
         Me.newSubject.Controls.Add(Me.Subject)
         Me.newSubject.Controls.Add(Me.Cancel)
         Me.newSubject.Controls.Add(Me.Label25)
-        Me.newSubject.Location = New System.Drawing.Point(9, 34)
+        Me.newSubject.Location = New System.Drawing.Point(14, 20)
         Me.newSubject.Name = "newSubject"
         Me.newSubject.Size = New System.Drawing.Size(945, 495)
         Me.newSubject.TabIndex = 18
         Me.newSubject.TabStop = False
         Me.newSubject.Text = " New Subject"
         Me.newSubject.Visible = False
+        '
+        'TypeError
+        '
+        Me.TypeError.AutoSize = True
+        Me.TypeError.BackColor = System.Drawing.Color.LavenderBlush
+        Me.TypeError.ForeColor = System.Drawing.Color.Red
+        Me.TypeError.Location = New System.Drawing.Point(206, 385)
+        Me.TypeError.Name = "TypeError"
+        Me.TypeError.Size = New System.Drawing.Size(102, 13)
+        Me.TypeError.TabIndex = 52
+        Me.TypeError.Text = "Please select a type"
+        Me.TypeError.Visible = False
         '
         'Label17
         '
@@ -528,7 +543,7 @@ Partial Class Timetable
         '
         Me.LineShape11.Name = "LineShape11"
         Me.LineShape11.X1 = 9
-        Me.LineShape11.X2 = 915
+        Me.LineShape11.X2 = 935
         Me.LineShape11.Y1 = 510
         Me.LineShape11.Y2 = 510
         '
@@ -536,7 +551,7 @@ Partial Class Timetable
         '
         Me.LineShape10.Name = "LineShape10"
         Me.LineShape10.X1 = 9
-        Me.LineShape10.X2 = 915
+        Me.LineShape10.X2 = 935
         Me.LineShape10.Y1 = 318
         Me.LineShape10.Y2 = 318
         '
@@ -544,7 +559,7 @@ Partial Class Timetable
         '
         Me.LineShape9.Name = "LineShape9"
         Me.LineShape9.X1 = 9
-        Me.LineShape9.X2 = 915
+        Me.LineShape9.X2 = 935
         Me.LineShape9.Y1 = 462
         Me.LineShape9.Y2 = 462
         '
@@ -552,7 +567,7 @@ Partial Class Timetable
         '
         Me.LineShape8.Name = "LineShape8"
         Me.LineShape8.X1 = 9
-        Me.LineShape8.X2 = 915
+        Me.LineShape8.X2 = 935
         Me.LineShape8.Y1 = 414
         Me.LineShape8.Y2 = 414
         '
@@ -560,7 +575,7 @@ Partial Class Timetable
         '
         Me.LineShape7.Name = "LineShape7"
         Me.LineShape7.X1 = 9
-        Me.LineShape7.X2 = 915
+        Me.LineShape7.X2 = 935
         Me.LineShape7.Y1 = 366
         Me.LineShape7.Y2 = 366
         '
@@ -568,7 +583,7 @@ Partial Class Timetable
         '
         Me.LineShape6.Name = "LineShape6"
         Me.LineShape6.X1 = 9
-        Me.LineShape6.X2 = 915
+        Me.LineShape6.X2 = 935
         Me.LineShape6.Y1 = 270
         Me.LineShape6.Y2 = 270
         '
@@ -576,7 +591,7 @@ Partial Class Timetable
         '
         Me.LineShape5.Name = "LineShape5"
         Me.LineShape5.X1 = 9
-        Me.LineShape5.X2 = 915
+        Me.LineShape5.X2 = 935
         Me.LineShape5.Y1 = 222
         Me.LineShape5.Y2 = 222
         '
@@ -584,7 +599,7 @@ Partial Class Timetable
         '
         Me.LineShape4.Name = "LineShape4"
         Me.LineShape4.X1 = 9
-        Me.LineShape4.X2 = 915
+        Me.LineShape4.X2 = 935
         Me.LineShape4.Y1 = 174
         Me.LineShape4.Y2 = 174
         '
@@ -592,7 +607,7 @@ Partial Class Timetable
         '
         Me.LineShape3.Name = "LineShape3"
         Me.LineShape3.X1 = 9
-        Me.LineShape3.X2 = 915
+        Me.LineShape3.X2 = 935
         Me.LineShape3.Y1 = 126
         Me.LineShape3.Y2 = 126
         '
@@ -600,7 +615,7 @@ Partial Class Timetable
         '
         Me.LineShape2.Name = "LineShape2"
         Me.LineShape2.X1 = 9
-        Me.LineShape2.X2 = 915
+        Me.LineShape2.X2 = 935
         Me.LineShape2.Y1 = 78
         Me.LineShape2.Y2 = 78
         '
@@ -608,7 +623,7 @@ Partial Class Timetable
         '
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = 9
-        Me.LineShape1.X2 = 915
+        Me.LineShape1.X2 = 935
         Me.LineShape1.Y1 = 30
         Me.LineShape1.Y2 = 30
         '
@@ -643,28 +658,30 @@ Partial Class Timetable
         Me.DateLabel.TabIndex = 15
         Me.DateLabel.Text = "Date"
         '
+        'Timer2
+        '
+        Me.Timer2.Enabled = True
+        '
         'Timer1
         '
         Me.Timer1.Enabled = True
         '
-        'TypeError
+        'Label18
         '
-        Me.TypeError.AutoSize = True
-        Me.TypeError.BackColor = System.Drawing.Color.LavenderBlush
-        Me.TypeError.ForeColor = System.Drawing.Color.Red
-        Me.TypeError.Location = New System.Drawing.Point(206, 385)
-        Me.TypeError.Name = "TypeError"
-        Me.TypeError.Size = New System.Drawing.Size(102, 13)
-        Me.TypeError.TabIndex = 52
-        Me.TypeError.Text = "Please select a type"
-        Me.TypeError.Visible = False
+        Me.Label18.AutoSize = True
+        Me.Label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label18.Location = New System.Drawing.Point(205, 14)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(232, 13)
+        Me.Label18.TabIndex = 16
+        Me.Label18.Text = "Double click to delete, Click once for comments"
         '
         'Timetable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(996, 618)
-        Me.Controls.Add(Me.newSubject)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.DateLabel)
         Me.Controls.Add(Me.BackMain)
         Me.Controls.Add(Me.newLesson)
@@ -700,7 +717,6 @@ Partial Class Timetable
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents DateLabel As System.Windows.Forms.Label
-    Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents LineShape11 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents LineShape10 As Microsoft.VisualBasic.PowerPacks.LineShape
@@ -737,4 +753,7 @@ Partial Class Timetable
     Friend WithEvents Type As System.Windows.Forms.ComboBox
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents TypeError As System.Windows.Forms.Label
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Label18 As System.Windows.Forms.Label
 End Class

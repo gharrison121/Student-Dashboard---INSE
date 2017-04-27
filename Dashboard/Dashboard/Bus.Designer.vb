@@ -42,6 +42,7 @@ Partial Class Bus
         Me.DateLabel.AutoSize = True
         Me.DateLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DateLabel.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateLabel.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.DateLabel.Location = New System.Drawing.Point(802, 9)
         Me.DateLabel.Name = "DateLabel"
         Me.DateLabel.Size = New System.Drawing.Size(57, 25)
