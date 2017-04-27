@@ -6,36 +6,25 @@
         DateLabel.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
         DateLabel.BackColor = Color.DarkViolet
         Weekend.Visible = False
-        Langstone.Visible = False
         OffTerm.Visible = False
         Weekday.Visible = True
     End Sub
 
     Private Sub WeekdayButton_Click(sender As Object, e As EventArgs) Handles WeekdayButton.Click
         Weekend.Visible = False
-        Langstone.Visible = False
         OffTerm.Visible = False
         Weekday.Visible = True
     End Sub
 
     Private Sub WeekendButton_Click(sender As Object, e As EventArgs) Handles WeekendButton.Click
         Weekday.Visible = False
-        Langstone.Visible = False
         OffTerm.Visible = False
         Weekend.Visible = True
-    End Sub
-
-    Private Sub Langstone_Click(sender As Object, e As EventArgs) Handles Lansgstone.Click
-        Weekday.Visible = False
-        Weekend.Visible = False
-        OffTerm.Visible = False
-        Langstone.Visible = True
     End Sub
 
     Private Sub OutOfTerm_Click(sender As Object, e As EventArgs) Handles OutOfTerm.Click
         Weekday.Visible = False
         Weekend.Visible = False
-        Langstone.Visible = False
         OffTerm.Visible = True
     End Sub
 
@@ -44,7 +33,16 @@
     End Sub
 
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Me.Hide()
+        Main.Show()
+    End Sub
+
+    Private Sub Langstone_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Main.Show()
     End Sub
