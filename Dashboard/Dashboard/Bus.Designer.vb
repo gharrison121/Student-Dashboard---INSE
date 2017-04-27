@@ -27,13 +27,11 @@ Partial Class Bus
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.WeekdayButton = New System.Windows.Forms.Button()
         Me.WeekendButton = New System.Windows.Forms.Button()
-        Me.Lansgstone = New System.Windows.Forms.Button()
         Me.OutOfTerm = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Weekday = New System.Windows.Forms.FlowLayoutPanel()
-        Me.OffTerm = New System.Windows.Forms.FlowLayoutPanel()
         Me.Weekend = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Langstone = New System.Windows.Forms.FlowLayoutPanel()
+        Me.OffTerm = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Weekday = New System.Windows.Forms.FlowLayoutPanel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -67,18 +65,9 @@ Partial Class Bus
         Me.WeekendButton.Text = "Weekend"
         Me.WeekendButton.UseVisualStyleBackColor = True
         '
-        'Lansgstone
-        '
-        Me.Lansgstone.Location = New System.Drawing.Point(194, 12)
-        Me.Lansgstone.Name = "Lansgstone"
-        Me.Lansgstone.Size = New System.Drawing.Size(75, 23)
-        Me.Lansgstone.TabIndex = 11
-        Me.Lansgstone.Text = "Langstone"
-        Me.Lansgstone.UseVisualStyleBackColor = True
-        '
         'OutOfTerm
         '
-        Me.OutOfTerm.Location = New System.Drawing.Point(275, 12)
+        Me.OutOfTerm.Location = New System.Drawing.Point(194, 12)
         Me.OutOfTerm.Name = "OutOfTerm"
         Me.OutOfTerm.Size = New System.Drawing.Size(76, 23)
         Me.OutOfTerm.TabIndex = 12
@@ -89,10 +78,29 @@ Partial Class Bus
         '
         Me.Timer1.Enabled = True
         '
+        'Weekend
+        '
+        Me.Weekend.BackgroundImage = CType(resources.GetObject("Weekend.BackgroundImage"), System.Drawing.Image)
+        Me.Weekend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Weekend.Location = New System.Drawing.Point(22, 41)
+        Me.Weekend.Name = "Weekend"
+        Me.Weekend.Size = New System.Drawing.Size(894, 356)
+        Me.Weekend.TabIndex = 15
+        '
+        'OffTerm
+        '
+        Me.OffTerm.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.out_of_term_table_new
+        Me.OffTerm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.OffTerm.Location = New System.Drawing.Point(22, 41)
+        Me.OffTerm.Name = "OffTerm"
+        Me.OffTerm.Size = New System.Drawing.Size(1005, 635)
+        Me.OffTerm.TabIndex = 14
+        '
         'Weekday
         '
         Me.Weekday.AutoScroll = True
-        Me.Weekday.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.BusWeekday
+        Me.Weekday.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.term_table_new
+        Me.Weekday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Weekday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Weekday.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
         Me.Weekday.Location = New System.Drawing.Point(22, 41)
@@ -100,36 +108,12 @@ Partial Class Bus
         Me.Weekday.Size = New System.Drawing.Size(1141, 881)
         Me.Weekday.TabIndex = 13
         '
-        'OffTerm
-        '
-        Me.OffTerm.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.outoftermbus
-        Me.OffTerm.Location = New System.Drawing.Point(22, 41)
-        Me.OffTerm.Name = "OffTerm"
-        Me.OffTerm.Size = New System.Drawing.Size(1005, 635)
-        Me.OffTerm.TabIndex = 14
-        '
-        'Weekend
-        '
-        Me.Weekend.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.BusWeekend
-        Me.Weekend.Location = New System.Drawing.Point(22, 41)
-        Me.Weekend.Name = "Weekend"
-        Me.Weekend.Size = New System.Drawing.Size(894, 356)
-        Me.Weekend.TabIndex = 15
-        '
-        'Langstone
-        '
-        Me.Langstone.BackgroundImage = Global.StudentDashboard.My.Resources.Resources.langstonecampus
-        Me.Langstone.Location = New System.Drawing.Point(22, 41)
-        Me.Langstone.Name = "Langstone"
-        Me.Langstone.Size = New System.Drawing.Size(1463, 637)
-        Me.Langstone.TabIndex = 16
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(701, 12)
+        Me.Button1.Location = New System.Drawing.Point(680, 9)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 17
+        Me.Button1.TabIndex = 16
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -138,17 +122,15 @@ Partial Class Bus
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1178, 515)
+        Me.ClientSize = New System.Drawing.Size(1195, 532)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Weekend)
         Me.Controls.Add(Me.OffTerm)
         Me.Controls.Add(Me.OutOfTerm)
-        Me.Controls.Add(Me.Lansgstone)
         Me.Controls.Add(Me.WeekendButton)
         Me.Controls.Add(Me.WeekdayButton)
         Me.Controls.Add(Me.DateLabel)
         Me.Controls.Add(Me.Weekday)
-        Me.Controls.Add(Me.Langstone)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Bus"
         Me.Text = "Shuttle Bus"
@@ -159,12 +141,10 @@ Partial Class Bus
     Friend WithEvents DateLabel As System.Windows.Forms.Label
     Friend WithEvents WeekdayButton As System.Windows.Forms.Button
     Friend WithEvents WeekendButton As System.Windows.Forms.Button
-    Friend WithEvents Lansgstone As System.Windows.Forms.Button
     Friend WithEvents OutOfTerm As System.Windows.Forms.Button
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Weekday As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents OffTerm As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents Weekend As System.Windows.Forms.FlowLayoutPanel
-    Friend WithEvents Langstone As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
